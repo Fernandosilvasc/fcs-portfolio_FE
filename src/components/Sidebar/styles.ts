@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const NavContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 60px;
   padding: 0;
 `;
 
