@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { ReactComponent as NavButton } from '../../assets/navButton.svg';
 import { ReactComponent as HomeBtn } from '../../assets/home-btn.svg';
@@ -13,31 +14,31 @@ const Sidebar: React.FC = () => {
     <>
       <NavContainer>
         <NavLink>
-          <a href="/">
+          <Link to="/">
             <NavButton />
-          </a>
+          </Link>
         </NavLink>
         <Navbar>
-          <a href="home">
+          <Link to="/">
             <HomeBtn />
             <p>Home</p>
-          </a>
-          <a href="about">
+          </Link>
+          <Link to="about">
             <AboutBtn />
             <p>About</p>
-          </a>
-          <a href="work">
+          </Link>
+          <Link to="work">
             <WorkBtn />
             <p>Work</p>
-          </a>
-          <a href="contact">
+          </Link>
+          <Link to="contact">
             <ContactBtn />
             <p>Contact</p>
-          </a>
-          <a href="githubFeeds">
+          </Link>
+          <Link to="githubFeeds">
             <GithubBtn />
             <p>Feeds</p>
-          </a>
+          </Link>
         </Navbar>
       </NavContainer>
     </>
