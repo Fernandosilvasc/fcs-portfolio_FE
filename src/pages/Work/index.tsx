@@ -42,7 +42,7 @@ const Work: React.FC = () => {
                   <h2>{project.title}</h2>
                   <h3>{project.techs}</h3>
                   <div>
-                    <Link to="/">Details</Link>
+                    <Link to="/project">Details</Link>
                     <a href="/">Launch</a>
                   </div>
                 </div>

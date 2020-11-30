@@ -74,32 +74,6 @@ export const Header = styled.header`
       }
     }
   }
-
-  ul {
-    display: flex;
-    list-style: none;
-    margin-right: 50px;
-    gap: 5px;
-
-    li {
-      text-transform: uppercase;
-      font-family: Poppins;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 13px;
-      line-height: 13px;
-      color: #efefd0;
-      filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
-      border-radius: 5px;
-      padding: 10px;
-
-      &:hover {
-        background: rgba(254, 127, 45, 0.9);
-        border-radius: 5px;
-        padding: 10px;
-      }
-    }
-  }
 `;
 
 export const BoxContainer = styled.div`
@@ -113,7 +87,7 @@ export const BoxProject = styled.div`
   display: flex;
   width: 545px;
   height: 245px;
-  margin-top: 50px;
+  margin-top: 60px;
   background: #1f1f23;
   box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
