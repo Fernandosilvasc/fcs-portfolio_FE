@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import {
   Container,
@@ -28,7 +29,13 @@ const Project: React.FC = () => {
               </h2>
             </div>
             <div>
-              <a href="/">GitHub-Link</a>
+              <a
+                href="https://github.com/Fernandosilvasc/nlw3-happy"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub-Link
+              </a>
               <a href="/">Visit Website</a>
             </div>
           </Header>
@@ -36,7 +43,7 @@ const Project: React.FC = () => {
             <img src={happyMockup} alt="Happy" />
             <ProjectDescription>
               <Technologies>
-                <h3>Technologies</h3>
+                <h2>Technologies</h2>
                 <div>
                   <div>
                     <span>NodeJS</span>
@@ -56,7 +63,7 @@ const Project: React.FC = () => {
                 </div>
               </Technologies>
               <Tools>
-                <h3>Tools</h3>
+                <h2>Tools</h2>
                 <div>
                   <div>
                     <span>Figma</span>
@@ -70,8 +77,9 @@ const Project: React.FC = () => {
                 </div>
               </Tools>
               <Description>
-                <h3>💻 Project</h3>
+                <h2>Project</h2>
                 <div>
+                  <h3>About this project</h3>
                   <p>
                     The Happy application was a project that #Rocketseat had
                     proposed during #NLW3 event which had as objective to
@@ -79,6 +87,20 @@ const Project: React.FC = () => {
                     that have a responsibility the care for older people or who
                     not have a shelter.
                   </p>
+
+                  <div>
+                    <h4>Features</h4>
+                    <p>* Lorem ipsum dolor sit amet.</p>
+                    <p>
+                      * Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p>
+                      * Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit.
+                    </p>
+                  </div>
+
+                  <h3>What I learned</h3>
                   <p>
                     The Happy application was a project that #Rocketseat had
                     proposed during #NLW3 event which had as objective to
@@ -86,6 +108,7 @@ const Project: React.FC = () => {
                     that have a responsibility the care for older people or who
                     not have a shelter.
                   </p>
+                  <h3>Challenges faced</h3>
                   <p>
                     The Happy application was a project that #Rocketseat had
                     proposed during #NLW3 event which had as objective to
@@ -97,6 +120,7 @@ const Project: React.FC = () => {
               </Description>
             </ProjectDescription>
           </Content>
+          <Link to="/work">&#x276E;&#x276E; Back</Link>
         </BoxContent>
       </Container>
     </>

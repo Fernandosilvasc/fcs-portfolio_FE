@@ -78,6 +78,7 @@ export const Header = styled.header`
 
 export const BoxContainer = styled.div`
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   overflow-y: scroll;
@@ -87,7 +88,7 @@ export const BoxProject = styled.div`
   display: flex;
   width: 545px;
   height: 245px;
-  margin-top: 60px;
+  margin-top: 50px;
   background: #1f1f23;
   box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
