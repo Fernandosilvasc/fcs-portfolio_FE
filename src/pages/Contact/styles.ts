@@ -15,6 +15,7 @@ export const CardDescription = styled.div`
   width: 685px;
   height: 685px;
   background: #31313a;
+  border-radius: 5px;
 `;
 
 export const Header = styled.header`

@@ -5,8 +5,12 @@ import {
   Container,
   CardDescription,
   Header,
-  BoxContainer,
   BoxProject,
+  ProjectContainer,
+  Project,
+  Content,
+  ImgProject,
+  Buttons,
 } from './styles';
 
 import Sidebar from '../../components/Sidebar/index';
@@ -34,21 +38,24 @@ const Work: React.FC = () => {
             <NavBar />
           </Header>
 
-          <BoxContainer>
+          <BoxProject>
             {projects.map(project => (
-              <BoxProject key={project.id}>
-                <img src={project.imgPath} alt={project.title} />
-                <div>
-                  <h2>{project.title}</h2>
-                  <h3>{project.techs}</h3>
-                  <div>
-                    <Link to="/project">Details</Link>
-                    <a href="/">Launch</a>
-                  </div>
-                </div>
-              </BoxProject>
+              <ProjectContainer>
+                <Project>
+                  <ImgProject src={project.imgPath} alt={project.title} />
+
+                  <Content>
+                    <h2>{project.title}</h2>
+                    <h3>{project.techs}</h3>
+                    <Buttons>
+                      <Link to="/project">Details</Link>
+                      <a href="/">Launch</a>
+                    </Buttons>
+                  </Content>
+                </Project>
+              </ProjectContainer>
             ))}
-          </BoxContainer>
+          </BoxProject>
         </CardDescription>
       </Container>
     </>

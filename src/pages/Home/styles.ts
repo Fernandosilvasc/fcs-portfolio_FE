@@ -14,6 +14,7 @@ export const CardDescription = styled.div`
   width: 685px;
   height: 685px;
   background: #31313a;
+  border-radius: 5px;
 `;
 
 export const Header = styled.header`
@@ -117,7 +118,7 @@ export const BoxSkills = styled.div`
     color: #efefd0;
   }
 
-  div {
+  /* div {
     margin: 0 auto;
 
     ul {
@@ -127,5 +128,5 @@ export const BoxSkills = styled.div`
       flex-wrap: wrap;
       gap: 30px;
     }
-  }
+  } */
 `;

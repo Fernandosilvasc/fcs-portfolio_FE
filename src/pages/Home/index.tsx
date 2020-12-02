@@ -13,14 +13,8 @@ import { ReactComponent as ComputerIcon } from '../../assets/computer.svg';
 import { ReactComponent as MapIcon } from '../../assets/map.svg';
 import { ReactComponent as GitHubIcon } from '../../assets/github.svg';
 import { ReactComponent as LinkedInIcon } from '../../assets/linkedIn.svg';
-import { ReactComponent as NodeJsIcon } from '../../assets/nodejs_icon.svg';
-import { ReactComponent as ReactIcon } from '../../assets/react_icon.svg';
-import { ReactComponent as JSIcon } from '../../assets/js_icon.svg';
-import { ReactComponent as PHPIcon } from '../../assets/php_icon.svg';
-import { ReactComponent as HTMLIcon } from '../../assets/html_icon.svg';
-import { ReactComponent as CSSIcon } from '../../assets/css_icon.svg';
-import { ReactComponent as SassIcon } from '../../assets/sass_icon.svg';
-import { ReactComponent as FigmaIcon } from '../../assets/figma_icon.svg';
+
+import IconsSkill from './IconsSkill/index';
 
 const Home: React.FC = () => {
   return (
@@ -59,34 +53,7 @@ const Home: React.FC = () => {
           </BoxIntroduction>
           <BoxSkills>
             <h2>Skills</h2>
-            <div>
-              <ul>
-                <li>
-                  <NodeJsIcon />
-                </li>
-                <li>
-                  <ReactIcon />
-                </li>
-                <li>
-                  <JSIcon />
-                </li>
-                <li>
-                  <PHPIcon />
-                </li>
-                <li>
-                  <HTMLIcon />
-                </li>
-                <li>
-                  <CSSIcon />
-                </li>
-                <li>
-                  <SassIcon />
-                </li>
-                <li>
-                  <FigmaIcon />
-                </li>
-              </ul>
-            </div>
+            <IconsSkill />
           </BoxSkills>
         </CardDescription>
       </Container>
