@@ -21,7 +21,7 @@ const Home: React.FC = () => {
     <>
       <Container>
         <Sidebar />
-        <InfoCard />
+        <InfoCard title="home" />
         <CardDescription>
           <Header>
             <div />

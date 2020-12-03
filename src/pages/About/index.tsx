@@ -11,7 +11,7 @@ const About: React.FC = () => {
     <>
       <Container>
         <Sidebar />
-        <InfoCard />
+        <InfoCard title="about" />
         <CardDescription>
           <Header>
             <div />

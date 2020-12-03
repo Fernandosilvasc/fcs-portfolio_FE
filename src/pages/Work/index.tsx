@@ -24,7 +24,7 @@ const Work: React.FC = () => {
     <>
       <Container>
         <Sidebar />
-        <InfoCard />
+        <InfoCard title="work" />
         <CardDescription>
           <Header>
             <div>
@@ -42,10 +42,10 @@ const Work: React.FC = () => {
             {projects.map(project => (
               <ProjectContainer>
                 <Project>
-                  <ImgProject src={project.imgPath} alt={project.title} />
+                  <ImgProject src={project.imgPath} alt={project.name} />
 
                   <Content>
-                    <h2>{project.title}</h2>
+                    <h2>{project.name}</h2>
                     <h3>{project.techs}</h3>
                     <Buttons>
                       <Link to="/project">Details</Link>

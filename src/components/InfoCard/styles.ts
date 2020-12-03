@@ -1,9 +1,5 @@
 import styled from 'styled-components';
 
-// export const styleHandle = (display) => {
-
-// }
-
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -16,26 +12,34 @@ export const Container = styled.div`
 `;
 
 export const ImageBackground = styled.div`
+  width: 430px;
   height: 356px;
   img {
-    width: 430px;
-    height: 356px;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
-  }
-  div {
-    display: flex;
-    position: relative;
-    top: -55px;
-    width: 0px;
-    height: 0px;
-    margin: 0 auto;
-    border-top: 50px solid transparent;
-    border-left: 215px solid #31313a;
-    border-right: 215px solid #31313a;
   }
 `;
 
-export const AvatarContainer = styled.div`
+export const Abstract = styled.div`
+  display: flex;
+  position: relative;
+  top: -55px;
+  width: 0px;
+  height: 0px;
+  margin: 0 auto;
+  border-top: 50px solid transparent;
+  border-left: 215px solid #31313a;
+  border-right: 215px solid #31313a;
+`;
+
+export const Content = styled.div`
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Avatar = styled.div`
   position: relative;
   top: -80px;
   margin: 0 auto;
@@ -78,10 +82,13 @@ export const AvatarContainer = styled.div`
 `;
 
 export const Description = styled.div`
+  display: flex;
+  flex-direction: column;
   position: relative;
   top: -60px;
   text-align: center;
   margin: 0;
+
   h1 {
     margin: 0;
     font-family: 'Poppins';
@@ -104,11 +111,11 @@ export const Description = styled.div`
 `;
 
 export const Links = styled.div`
-  display: ${props => props.theme.main};
+  display: 'flex';
   justify-content: center;
   align-items: center;
   position: relative;
-  top: -50px;
+  top: 20px;
 
   a {
     svg {
@@ -130,19 +137,12 @@ export const Links = styled.div`
   }
 `;
 
-Links.defaultProps = {
-  theme: {
-    main: 'flex',
-  },
-};
-
 export const Footer = styled.div`
   width: 100%;
   display: flex;
+  flex: 1;
   justify-content: center;
   align-items: center;
-  position: relative;
-  bottom: ${props => props.theme.main};
   text-align: center;
   text-transform: uppercase;
   border-top: 0.3px solid;
@@ -154,9 +154,7 @@ export const Footer = styled.div`
   );
 
   a {
-    /* width: 150px; */
     display: flex;
-    /* margin: 0 auto; */
     color: #efefd0;
     cursor: pointer;
     text-decoration: none;
@@ -166,7 +164,6 @@ export const Footer = styled.div`
     }
 
     p {
-      /* width: 120px; */
       font-family: Poppins;
       font-style: normal;
       font-weight: 800;
@@ -179,9 +176,3 @@ export const Footer = styled.div`
     margin-left: 10px;
   }
 `;
-
-Footer.defaultProps = {
-  theme: {
-    main: '-20px',
-  },
-};

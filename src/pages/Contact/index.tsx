@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
     <>
       <Container>
         <Sidebar />
-        <InfoCard />
+        <InfoCard title="contact" />
         <CardDescription>
           <Header>
             <div />

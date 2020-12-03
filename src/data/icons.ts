@@ -9,22 +9,22 @@ import FigmaIcon from '../assets/figma_icon.svg';
 
 const Icons = [
   {
-    id: 0,
+    id: 1,
     title: 'NodeJs',
     iconPath: NodeJsIcon,
   },
   {
-    id: 1,
+    id: 2,
     title: 'React',
     iconPath: ReactIcon,
   },
   {
-    id: 2,
+    id: 3,
     title: 'JS',
     iconPath: JSIcon,
   },
   {
-    id: 3,
+    id: 4,
     title: 'PHP',
     iconPath: PHPIcon,
   },

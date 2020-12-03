@@ -6,6 +6,7 @@ import About from '../pages/About/index';
 import Work from '../pages/Work/index';
 import Project from '../pages/Project/index';
 import Contact from '../pages/Contact/index';
+import GitHubFeeds from '../pages/GitHubFeeds/index';
 
 const Routes: React.FC = () => (
   <Switch>
@@ -14,6 +15,7 @@ const Routes: React.FC = () => (
     <Route path="/work" component={Work} />
     <Route path="/project" component={Project} />
     <Route path="/contact" component={Contact} />
+    <Route path="/githubFeeds" component={GitHubFeeds} />
   </Switch>
 );
 

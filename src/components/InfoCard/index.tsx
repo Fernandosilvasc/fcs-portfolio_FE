@@ -3,7 +3,9 @@ import React from 'react';
 import {
   Container,
   ImageBackground,
-  AvatarContainer,
+  Abstract,
+  Content,
+  Avatar,
   Description,
   Links,
   Footer,
@@ -15,74 +17,58 @@ import { ReactComponent as GitHub } from '../../assets/github.svg';
 import { ReactComponent as LikedIn } from '../../assets/linkedIn.svg';
 import { ReactComponent as Clip } from '../../assets/clip.svg';
 
-interface Props {
-  props: string;
+interface InfoCardProps {
+  title: string;
 }
 
-const LinkProps = {
-  main: 'flex',
-};
-
-let FooterProps = {
-  main: '-23px',
-};
-
-if (LinkProps.main === 'none') {
-  FooterProps = {
-    main: '-55px',
-  };
-}
-
-const InfoCard: React.FC = props => {
+const InfoCard: React.FC<InfoCardProps> = ({ title }: InfoCardProps) => {
   return (
     <>
       <Container>
         <ImageBackground>
           <img src={ImgBackground} alt="background" />
-          <div />
+          <Abstract />
         </ImageBackground>
 
-        <AvatarContainer>
-          <div className="avatar">
-            <img src={ImgAvatar} alt="avatar" />
-          </div>
-          <div />
-        </AvatarContainer>
+        <Content>
+          <Avatar>
+            <div className="avatar">
+              <img src={ImgAvatar} alt="avatar" />
+            </div>
+            <div />
+          </Avatar>
 
-        <Description>
-          <h1>Fernando Silva</h1>
-          <p>FullStack Developer</p>
-        </Description>
+          <Description>
+            <h1>Fernando Silva</h1>
+            <p>FullStack Developer</p>
 
-        <Links>
-          <a href="/">
-            <GitHub />
-          </a>
-          <a href="/">
-            <LikedIn />
-          </a>
-        </Links>
+            {title !== 'home' && (
+              <Links>
+                <a href="/">
+                  <GitHub />
+                </a>
+                <a href="/">
+                  <LikedIn />
+                </a>
+              </Links>
+            )}
+          </Description>
+        </Content>
 
-        {/* {props === 'contact' ? (
-          <Footer theme={FooterProps}>
+        {title !== 'contact' ? (
+          <Footer>
             <a href="/">
               <p>Contact Me</p>
             </a>
           </Footer>
         ) : (
-          <Footer theme={FooterProps}>
+          <Footer>
             <a href="/">
               <p>Resume</p>
             </a>
             <Clip />
           </Footer>
-        )} */}
-
-        <Footer>
-          <a href="/">
-            <p>Contact Me</p>
-          </a>
-        </Footer>
+        )}
       </Container>
     </>
   );
