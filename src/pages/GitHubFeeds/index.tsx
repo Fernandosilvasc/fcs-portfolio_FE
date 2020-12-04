@@ -43,7 +43,7 @@ const GitHubFeeds: React.FC = () => {
               <Project>
                 <div>
                   <FolderImg />
-                  <a href={project.link} target="blank">
+                  <a href={project.webLink} target="blank">
                     <ArrowLink />
                   </a>
                 </div>

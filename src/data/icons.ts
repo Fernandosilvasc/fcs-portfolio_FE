@@ -1,3 +1,5 @@
+import { uuid } from 'uuidv4';
+
 import NodeJsIcon from '../assets/nodejs_icon.svg';
 import ReactIcon from '../assets/react_icon.svg';
 import JSIcon from '../assets/js_icon.svg';
@@ -9,42 +11,42 @@ import FigmaIcon from '../assets/figma_icon.svg';
 
 const Icons = [
   {
-    id: 1,
+    id: uuid(),
     title: 'NodeJs',
     iconPath: NodeJsIcon,
   },
   {
-    id: 2,
+    id: uuid(),
     title: 'React',
     iconPath: ReactIcon,
   },
   {
-    id: 3,
+    id: uuid(),
     title: 'JS',
     iconPath: JSIcon,
   },
   {
-    id: 4,
+    id: uuid(),
     title: 'PHP',
     iconPath: PHPIcon,
   },
   {
-    id: 4,
+    id: uuid(),
     title: 'HTML',
     iconPath: HTMLIcon,
   },
   {
-    id: 5,
+    id: uuid(),
     title: 'CSS',
     iconPath: CSSIcon,
   },
   {
-    id: 6,
+    id: uuid(),
     title: 'Sass',
     iconPath: SassIcon,
   },
   {
-    id: 7,
+    id: uuid(),
     title: 'Figma',
     iconPath: FigmaIcon,
   },

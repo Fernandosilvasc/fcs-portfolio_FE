@@ -132,10 +132,20 @@ export const Content = styled.div`
     line-height: 13px;
   }
 
-  h3 {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 13px;
+  div {
+    display: flex;
+
+    h3 {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 13px;
+      padding: 0 5px;
+      border-right: 2px solid #efefd0;
+    }
+
+    h3:last-child {
+      border-right: none;
+    }
   }
 `;
 

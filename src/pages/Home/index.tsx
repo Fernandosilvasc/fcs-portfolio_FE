@@ -43,11 +43,23 @@ const Home: React.FC = () => {
               </li>
               <li>
                 <GitHubIcon />
-                <a href="/">&#8212; GitHub link</a>
+                <a
+                  href="https://github.com/Fernandosilvasc"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  &#8212; GitHub link
+                </a>
               </li>
               <li>
                 <LinkedInIcon />
-                <a href="/">&#8212; LinkedIn link</a>
+                <a
+                  href="https://www.linkedin.com/in/fernando-correa-da-silva/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  &#8212; LinkedIn link
+                </a>
               </li>
             </ul>
           </BoxIntroduction>

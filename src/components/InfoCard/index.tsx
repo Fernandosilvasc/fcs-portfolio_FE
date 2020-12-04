@@ -44,10 +44,18 @@ const InfoCard: React.FC<InfoCardProps> = ({ title }: InfoCardProps) => {
 
             {title !== 'home' && (
               <Links>
-                <a href="/">
+                <a
+                  href="https://github.com/Fernandosilvasc"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <GitHub />
                 </a>
-                <a href="/">
+                <a
+                  href="https://www.linkedin.com/in/fernando-correa-da-silva/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <LikedIn />
                 </a>
               </Links>
@@ -57,7 +65,11 @@ const InfoCard: React.FC<InfoCardProps> = ({ title }: InfoCardProps) => {
 
         {title !== 'contact' ? (
           <Footer>
-            <a href="/">
+            <a
+              href="mailto:fernando_silvasc@hotmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p>Contact Me</p>
             </a>
           </Footer>
