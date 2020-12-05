@@ -11,7 +11,7 @@ import {
   Footer,
 } from './styles';
 
-import ImgBackground from '../../assets/imageBackground.jpg';
+import ImgBackground from '../../assets/infoBackground.png';
 import ImgAvatar from '../../assets/imgAvatar.png';
 import { ReactComponent as GitHub } from '../../assets/github.svg';
 import { ReactComponent as LikedIn } from '../../assets/linkedIn.svg';
@@ -75,7 +75,11 @@ const InfoCard: React.FC<InfoCardProps> = ({ title }: InfoCardProps) => {
           </Footer>
         ) : (
           <Footer>
-            <a href="/">
+            <a
+              href="https://app.luminpdf.com/viewer/5fcb15c526f8530011ad2fc3"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p>Resume</p>
             </a>
             <Clip />

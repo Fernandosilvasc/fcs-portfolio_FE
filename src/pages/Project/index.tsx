@@ -13,7 +13,6 @@ import {
 } from './styles';
 
 import Sidebar from '../../components/Sidebar/index';
-import happyMockup from '../../assets/happyMockup.png';
 import { useProject } from '../../hooks/Projects';
 
 import Database from '../../data/projects';
@@ -22,7 +21,7 @@ interface ProjectState {
   id: string;
   name: string;
   title: string;
-  imgPath: string;
+  imgPath: Array<string>;
   techs: Array<string>;
   tools: Array<string>;
   webLink: string;
@@ -31,7 +30,7 @@ interface ProjectState {
 
 const Project: React.FC = () => {
   const { projectID } = useProject();
-  // const project = projectID as String;
+
   const [currentProject, setCurrentProject] = useState<ProjectState[]>([]);
 
   useEffect(() => {
@@ -67,7 +66,7 @@ const Project: React.FC = () => {
                 </div>
               </Header>
               <Content>
-                <img src={project.imgPath} alt={project.name} />
+                <img src={project.imgPath[1]} alt={project.name} />
                 <ProjectDescription>
                   <Technologies>
                     <h2>Technologies</h2>

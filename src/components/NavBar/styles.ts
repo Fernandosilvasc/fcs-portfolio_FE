@@ -24,6 +24,7 @@ export const Button = styled.button<FormProps>`
   padding: 5px 10px;
   border: none;
 
+
   &:hover {
     background: rgba(254, 127, 45, 0.9);
   }

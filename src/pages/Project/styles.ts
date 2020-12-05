@@ -98,7 +98,6 @@ export const Header = styled.header`
 
   div {
     display: flex;
-    gap: 10px;
     margin-right: 20px;
 
     a {
@@ -111,6 +110,7 @@ export const Header = styled.header`
       filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
       text-decoration: none;
       color: #efefd0;
+      margin-right: 10px;
 
       &:hover {
         background: ${shade(0.2, 'rgba(254, 127, 45, 0.9)')};
