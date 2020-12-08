@@ -111,7 +111,8 @@ const Work: React.FC = () => {
                     </div>
                     <Buttons>
                       <Link
-                        to="/project"
+                        key={project.id}
+                        to={`/project/${project.name}`}
                         onClick={() => {
                           handleSetProject(project.id);
                         }}

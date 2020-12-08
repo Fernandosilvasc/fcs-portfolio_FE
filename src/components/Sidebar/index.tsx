@@ -23,19 +23,19 @@ const Sidebar: React.FC = () => {
             <HomeBtn />
             <p>Home</p>
           </Link>
-          <Link to="about">
+          <Link to="/about">
             <AboutBtn />
             <p>About</p>
           </Link>
-          <Link to="work">
+          <Link to="/work">
             <WorkBtn />
             <p>Work</p>
           </Link>
-          <Link to="contact">
+          <Link to="/contact">
             <ContactBtn />
             <p>Contact</p>
           </Link>
-          <Link to="githubFeeds">
+          <Link to="/githubFeeds">
             <GithubBtn />
             <p>Feeds</p>
           </Link>

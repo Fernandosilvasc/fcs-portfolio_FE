@@ -13,10 +13,10 @@ import GitHubFeeds from '../pages/GitHubFeeds/index';
 const Routes: React.FC = () => (
   <ProjectProvider>
     <Switch>
-      <Route exact path="/" component={Home} />
+      <Route path="/" exact component={Home} />
       <Route path="/about" component={About} />
       <Route path="/work" component={Work} />
-      <Route path="/project" component={Project} />
+      <Route path="/project/:project+" component={Project} />
       <Route path="/contact" component={Contact} />
       <Route path="/githubFeeds" component={GitHubFeeds} />
     </Switch>
