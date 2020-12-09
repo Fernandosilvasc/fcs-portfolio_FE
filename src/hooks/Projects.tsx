@@ -1,12 +1,12 @@
 import React, { createContext, useState, useContext } from 'react';
 
-interface ProjectState {
-  id: string;
-}
+// interface ProjectState {
+//   id: string;
+// }
 
 interface ProjectContextData {
-  projectID: object;
-  setProjectID: React.Dispatch<React.SetStateAction<ProjectState>>;
+  projectID: string;
+  setProjectID: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const ProjectContext = createContext<ProjectContextData>(
@@ -14,7 +14,7 @@ const ProjectContext = createContext<ProjectContextData>(
 );
 
 export const ProjectProvider: React.FC = ({ children }: any) => {
-  const [projectID, setProjectID] = useState<ProjectState>({} as ProjectState);
+  const [projectID, setProjectID] = useState('');
 
   return (
     <ProjectContext.Provider value={{ projectID, setProjectID }}>

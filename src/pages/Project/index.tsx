@@ -29,8 +29,11 @@ interface ProjectState {
 }
 
 const Project: React.FC = () => {
-  const { projectID } = useProject();
+  const { projectID, setProjectID } = useProject();
 
+  const id = projectID;
+
+  console.log(projectID);
   const [currentProject, setCurrentProject] = useState<ProjectState[]>([]);
 
   useEffect(() => {
@@ -40,6 +43,8 @@ const Project: React.FC = () => {
 
     setCurrentProject(project);
   }, [projectID]);
+
+  setProjectID(id);
 
   return (
     <>

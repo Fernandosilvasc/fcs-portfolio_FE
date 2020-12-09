@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import Loader from 'react-loader-spinner';
 import {
   Container,
   CardDescription,
@@ -9,55 +9,69 @@ import {
   Project,
   Description,
 } from './styles';
-
 import { ReactComponent as FolderImg } from '../../assets/folder.svg';
 import { ReactComponent as ArrowLink } from '../../assets/arrowLink.svg';
-
 import Sidebar from '../../components/Sidebar/index';
 import InforCard from '../../components/InfoCard/index';
-
-// import Projects from '../../data/projects';
 import api from '../../services/api';
 
 interface Repository {
+  id: string;
   name: string;
   description: string;
   created_at: string;
   updated_at: string;
-  url: string;
-  stack: Array<any>;
+  html_url: string;
+  stack: string[];
 }
 
 const GitHubFeeds: React.FC = (): any => {
   const [repositories, setRepositories] = useState<Repository[]>([]);
+  const [isLoading, setLoading] = useState(true);
 
-  useEffect(() => {
-    api.get('users/fernandosilvasc/repos?per_page=4').then(response => {
-      const database: Repository[] = response.data;
-      // console.log(database);
-      const repositoriesDB: Repository[] = [];
-      database.map(repo => {
-        const { name, description, created_at, updated_at, url } = repo;
-        const stack: any[] = [];
+  const loadData = async () => {
+    const { data } = await api.get<Repository[]>(
+      '/users/Fernandosilvasc/repos?per_page=4',
+    );
 
-        api.get(`repos/fernandosilvasc/${name}/languages`).then(res => {
-          const stackRepo = res.data;
-          stack.push(Object.keys(stackRepo));
-        });
-        return repositoriesDB.push({
+    const repos = await Promise.all(
+      data.map(async repo => {
+        const {
+          id,
           name,
           description,
           created_at,
           updated_at,
-          url,
-          stack,
-        });
-      });
-      setRepositories(repositoriesDB);
-    });
-  }, []);
+          html_url,
+        } = repo;
 
-  console.log(repositories);
+        const { data: languages } = await api.get(
+          `/repos/Fernandosilvasc/${name}/languages`,
+        );
+
+        const stack = Object.keys(languages);
+
+        return {
+          id,
+          name,
+          description,
+          created_at,
+          updated_at,
+          html_url,
+          stack,
+        };
+      }),
+    );
+
+    setRepositories(repos);
+
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    setLoading(true);
+    loadData();
+  }, []);
 
   return (
     <Container>
@@ -72,35 +86,52 @@ const GitHubFeeds: React.FC = (): any => {
               Feeds
             </h2>
           </div>
-
           <p>latest repos</p>
         </Header>
-
         <BoxProject>
           <h2>Other projects I have worked on.</h2>
-          <ProjectContainer>
-            {repositories &&
-              repositories.map(repository => (
-                <Project>
+          {!isLoading ? (
+            <ProjectContainer>
+              {repositories.map(repository => (
+                <Project key={repository.id}>
                   <div>
                     <FolderImg />
-                    <a href={repository.url} target="blank">
+                    <a href={repository.html_url} target="blank">
                       <ArrowLink />
                     </a>
                   </div>
                   <Description>
-                    <h3>{repository.description}</h3>
-                    {repositories.stack[0].map(language => (
-                      <p>{language}</p>
-                    ))}
+                    <h3>{repository.name}</h3>
+                    {repository.description === null ? (
+                      <p>
+                        I am working on it, the description will be provided
+                        soon.
+                      </p>
+                    ) : (
+                      <p>{repository.description}</p>
+                    )}
+                    <div>
+                      {repository &&
+                        repository.stack.map(language => (
+                          <p key={language}>{language}</p>
+                        ))}
+                    </div>
                   </Description>
                 </Project>
               ))}
-          </ProjectContainer>
+            </ProjectContainer>
+          ) : (
+            <Loader
+              type="Oval"
+              color="#efefd0"
+              height={100}
+              width={100}
+              className="loader"
+            />
+          )}
         </BoxProject>
       </CardDescription>
     </Container>
   );
 };
-
 export default GitHubFeeds;

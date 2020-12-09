@@ -168,12 +168,12 @@ export const Technologies = styled.div`
 
   div {
     display: flex;
-    gap: 5px;
     color: #efefd0;
 
     div {
       border-right: 1px solid #efefd0;
       padding-right: 5px;
+      margin-right: 5px;
 
       span {
         color: #efefd0;
@@ -211,12 +211,12 @@ export const Tools = styled.div`
 
   div {
     display: flex;
-    gap: 5px;
     color: #efefd0;
 
     div {
       border-right: 1px solid #efefd0;
       padding-right: 5px;
+      margin-right: 5px;
 
       span {
         color: #efefd0;

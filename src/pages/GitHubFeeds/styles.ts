@@ -99,20 +99,24 @@ export const BoxProject = styled.div`
     font-size: 24px;
     color: #fe7f2d;
   }
+
+  .loader {
+    margin: 120px auto;
+  }
 `;
 
 export const ProjectContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  width: 490px;
-  margin: 40px 0;
+  width: 530px;
+  margin: 40px auto;
 `;
 
 export const Project = styled.div`
   display: flex;
   flex-direction: column;
-  width: 220px;
-  height: 170px;
+  width: 245px;
+  height: 190px;
   background: #efefd0;
   border-radius: 5px;
   margin: 10px;
@@ -145,21 +149,36 @@ export const Description = styled.div`
 
   h3 {
     width: 172px;
+    text-transform: capitalize;
     font-family: Poppins;
     font-style: normal;
-    font-weight: 300;
-    font-size: 11px;
+    font-weight: 500;
+    font-size: 10px;
     line-height: 15px;
-    margin: 10px 0;
+    margin: 5px 0;
   }
 
   p {
+    text-align: justify;
     font-family: Poppins;
-    font-style: normal;
     font-weight: 300;
     font-size: 10px;
     line-height: 15px;
     margin: 0;
     margin-bottom: 10px;
+  }
+
+  div {
+    margin: 0 auto;
+    p {
+      font-weight: 500;
+      margin-right: 5px;
+      padding-right: 5px;
+      border-right: 1px solid #000000;
+    }
+
+    p:last-child {
+      border-right: none;
+    }
   }
 `;
