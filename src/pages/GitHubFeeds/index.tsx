@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Loader from 'react-loader-spinner';
+
 import {
   Container,
   CardDescription,
@@ -9,6 +10,7 @@ import {
   Project,
   Description,
 } from './styles';
+
 import { ReactComponent as FolderImg } from '../../assets/folder.svg';
 import { ReactComponent as ArrowLink } from '../../assets/arrowLink.svg';
 import Sidebar from '../../components/Sidebar/index';
@@ -74,64 +76,66 @@ const GitHubFeeds: React.FC = (): any => {
   }, []);
 
   return (
-    <Container>
-      <Sidebar />
-      <InforCard title="githubFeeds" />
-      <CardDescription>
-        <Header>
-          <div>
-            <div />
-            <h2>
-              <span>GitHub </span>
-              Feeds
-            </h2>
-          </div>
-          <p>latest repos</p>
-        </Header>
-        <BoxProject>
-          <h2>Other projects I have worked on.</h2>
-          {!isLoading ? (
-            <ProjectContainer>
-              {repositories.map(repository => (
-                <Project key={repository.id}>
-                  <div>
-                    <FolderImg />
-                    <a href={repository.html_url} target="blank">
-                      <ArrowLink />
-                    </a>
-                  </div>
-                  <Description>
-                    <h3>{repository.name}</h3>
-                    {repository.description === null ? (
-                      <p>
-                        I am working on it, the description will be provided
-                        soon.
-                      </p>
-                    ) : (
-                      <p>{repository.description}</p>
-                    )}
+    <>
+      <Container>
+        <Sidebar />
+        <InforCard title="githubFeeds" />
+        <CardDescription>
+          <Header>
+            <div>
+              <div />
+              <h2>
+                <span>GitHub </span>
+                Feeds
+              </h2>
+            </div>
+            <p>latest repos</p>
+          </Header>
+          <BoxProject>
+            <h2>Other projects I have worked on.</h2>
+            {!isLoading ? (
+              <ProjectContainer>
+                {repositories.map(repository => (
+                  <Project key={repository.id}>
                     <div>
-                      {repository &&
-                        repository.stack.map(language => (
-                          <p key={language}>{language}</p>
-                        ))}
+                      <FolderImg />
+                      <a href={repository.html_url} target="blank">
+                        <ArrowLink />
+                      </a>
                     </div>
-                  </Description>
-                </Project>
-              ))}
-            </ProjectContainer>
-          ) : (
-            <Loader
-              type="Oval"
-              color="#efefd0"
-              height={100}
-              width={100}
-              className="loader"
-            />
-          )}
-        </BoxProject>
-      </CardDescription>
-    </Container>
+                    <Description>
+                      <h3>{repository.name}</h3>
+                      {repository.description === null ? (
+                        <p>
+                          I am working on it, the description will be provided
+                          soon.
+                        </p>
+                      ) : (
+                        <p>{repository.description}</p>
+                      )}
+                      <div>
+                        {repository &&
+                          repository.stack.map(language => (
+                            <p key={language}>{language}</p>
+                          ))}
+                      </div>
+                    </Description>
+                  </Project>
+                ))}
+              </ProjectContainer>
+            ) : (
+              <Loader
+                type="Oval"
+                color="#efefd0"
+                height={100}
+                width={100}
+                className="loader"
+              />
+            )}
+          </BoxProject>
+        </CardDescription>
+      </Container>
+    </>
   );
 };
 export default GitHubFeeds;

@@ -44,6 +44,7 @@ export const Navbar = styled.div`
   margin-top: 40px;
   background: #31313a;
   border-radius: 5px;
+
   a {
     display: flex;
     flex-direction: column;

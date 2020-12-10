@@ -24,7 +24,7 @@ export const ImageBackground = styled.div`
 export const Abstract = styled.div`
   display: flex;
   position: relative;
-  top: -55px;
+  top: -50px;
   width: 0px;
   height: 0px;
   margin: 0 auto;
@@ -41,9 +41,9 @@ export const Content = styled.div`
 
 export const Avatar = styled.div`
   position: relative;
-  top: -80px;
+  top: -140px;
   margin: 0 auto;
-  height: 150px;
+  height: 100px;
 
   .avatar {
     position: relative;
@@ -81,11 +81,11 @@ export const Avatar = styled.div`
   }
 `;
 
-export const Description = styled.div`
+export const InfoDescription = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-  top: -60px;
+  top: -70px;
   text-align: center;
   margin: 0;
 

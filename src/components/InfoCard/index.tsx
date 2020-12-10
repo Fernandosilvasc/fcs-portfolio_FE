@@ -6,7 +6,7 @@ import {
   Abstract,
   Content,
   Avatar,
-  Description,
+  InfoDescription,
   Links,
   Footer,
 } from './styles';
@@ -27,8 +27,8 @@ const InfoCard: React.FC<InfoCardProps> = ({ title }: InfoCardProps) => {
       <Container>
         <ImageBackground>
           <img src={ImgBackground} alt="background" />
-          <Abstract />
         </ImageBackground>
+        <Abstract />
 
         <Content>
           <Avatar>
@@ -38,7 +38,7 @@ const InfoCard: React.FC<InfoCardProps> = ({ title }: InfoCardProps) => {
             <div />
           </Avatar>
 
-          <Description>
+          <InfoDescription>
             <h1>Fernando Silva</h1>
             <p>FullStack Developer</p>
 
@@ -60,7 +60,7 @@ const InfoCard: React.FC<InfoCardProps> = ({ title }: InfoCardProps) => {
                 </a>
               </Links>
             )}
-          </Description>
+          </InfoDescription>
         </Content>
 
         {title !== 'contact' ? (
