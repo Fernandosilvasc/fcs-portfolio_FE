@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import { Container, CardDescription, Header, Content } from './styles';
 
@@ -9,10 +9,6 @@ import { ReactComponent as EmailIcon } from '../../assets/email.svg';
 import { ReactComponent as PhoneIcon } from '../../assets/phone.svg';
 
 const Contact: React.FC = () => {
-  useEffect(() => {
-    localStorage.removeItem('@FCS_Portfolio:project');
-  }, []);
-
   return (
     <>
       <Container>

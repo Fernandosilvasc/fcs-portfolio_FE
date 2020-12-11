@@ -81,8 +81,8 @@ const InfoCard: React.FC<InfoCardProps> = ({ title }: InfoCardProps) => {
               rel="noreferrer"
             >
               <p>Resume</p>
+              <Clip />
             </a>
-            <Clip />
           </Footer>
         )}
       </Container>

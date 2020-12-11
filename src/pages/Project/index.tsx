@@ -61,9 +61,7 @@ const Project: React.FC = () => {
             <Header>
               <div>
                 <div />
-                <h2>
-                  <span>{currentProject.name}</span>
-                </h2>
+                <h2>{currentProject.name}</h2>
               </div>
               <div>
                 <a

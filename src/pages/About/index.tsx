@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+// import Media from 'react-media';
 
 import { Container, CardDescription, Header, Content } from './styles';
 
@@ -7,10 +8,6 @@ import InfoCard from '../../components/InfoCard/index';
 import { ReactComponent as Illustration } from '../../assets/illustration.svg';
 
 const About: React.FC = () => {
-  useEffect(() => {
-    localStorage.removeItem('@FCS_Portfolio:project');
-  }, []);
-
   return (
     <>
       <Container>
@@ -36,6 +33,9 @@ const About: React.FC = () => {
                 currently dealing with #NodeJS, #React, #ReactNative and other
                 tools that help in the development of this environment.
               </p>
+              {/* <Media query={{ maxWidth: 600 }}>
+                {matches => (matches ? <p>test 1</p> : <Illustration />)}
+              </Media> */}
             </div>
             <Illustration />
           </Content>

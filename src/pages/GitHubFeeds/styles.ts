@@ -12,31 +12,31 @@ export const Container = styled.div`
   scrollbar-color: #65656c transparent;
 
   *::-webkit-scrollbar {
-    width: 5px;
+    width: 0.3125rem;
   }
   *::-webkit-scrollbar-track {
     background: transparent;
   }
   *::-webkit-scrollbar-thumb {
     background-color: #65656c;
-    border-radius: 20px;
+    border-radius: 1.25rem;
   }
 `;
 
 export const CardDescription = styled.div`
   display: flex;
   flex-direction: column;
-  width: 685px;
-  height: 685px;
+  width: 42.8125rem;
+  height: 42.8125rem;
   background: #31313a;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
 `;
 
 export const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 4.375rem;
   border-bottom: 1px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(
@@ -49,9 +49,9 @@ export const Header = styled.header`
     display: flex;
     align-items: center;
     div {
-      width: 37px;
-      height: 37px;
-      margin-left: 20px;
+      width: 2.3125rem;
+      height: 2.3125rem;
+      margin-left: 1.25rem;
       border-radius: 50%;
       background: linear-gradient(
         140.24deg,
@@ -64,11 +64,11 @@ export const Header = styled.header`
       font-family: Poppins;
       font-style: normal;
       font-weight: bold;
-      font-size: 20px;
-      line-height: 13px;
+      font-size: 1.25rem;
+      line-height: 0.8125rem;
       color: #efefd0;
       position: relative;
-      left: -18px;
+      left: -1.125rem;
 
       span {
         color: #fe7f2d;
@@ -79,10 +79,10 @@ export const Header = styled.header`
   p {
     font-family: Poppins;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
     color: #fe7f2d;
-    margin-right: 20px;
+    margin-right: 1.25rem;
   }
 `;
 
@@ -96,41 +96,41 @@ export const BoxProject = styled.div`
 
   h2 {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #fe7f2d;
   }
 
   .loader {
-    margin: 120px auto;
+    margin: 7.5rem auto;
   }
 `;
 
 export const ProjectContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  width: 530px;
-  margin: 40px auto;
+  width: 33.125rem;
+  margin: 2.5rem auto;
 `;
 
 export const Project = styled.div`
   display: flex;
   flex-direction: column;
-  width: 245px;
-  height: 190px;
+  width: 15.3125rem;
+  height: 11.875rem;
   background: #efefd0;
-  border-radius: 5px;
-  margin: 10px;
+  border-radius: 0.3125rem;
+  margin: 0.625rem;
 
   div {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 10px 20px 0 20px;
+    margin: 0.625rem 1.25rem 0 1.25rem;
 
     a {
       svg {
-        width: 12px;
-        height: 12px;
+        width: 0.75rem;
+        height: 0.75rem;
 
         &:hover {
           path {
@@ -148,32 +148,32 @@ export const Description = styled.div`
   flex: 1;
 
   h3 {
-    width: 172px;
+    width: 10.75rem;
     text-transform: capitalize;
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
-    font-size: 10px;
-    line-height: 15px;
-    margin: 5px 0;
+    font-size: 0.625rem;
+    line-height: 0.9375rem;
+    margin: 0.3125rem 0;
   }
 
   p {
     text-align: justify;
     font-family: Poppins;
     font-weight: 300;
-    font-size: 10px;
-    line-height: 15px;
+    font-size: 0.625rem;
+    line-height: 0.9375rem;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
 
   div {
     margin: 0 auto;
     p {
       font-weight: 500;
-      margin-right: 5px;
-      padding-right: 5px;
+      margin-right: 0.3125rem;
+      padding-right: 0.3125rem;
       border-right: 1px solid #000000;
     }
 

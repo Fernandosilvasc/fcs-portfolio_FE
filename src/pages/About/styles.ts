@@ -11,16 +11,16 @@ export const Container = styled.div`
 export const CardDescription = styled.div`
   display: flex;
   flex-direction: column;
-  width: 685px;
-  height: 685px;
+  width: 42.8125rem;
+  height: 42.8125rem;
   background: #31313a;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
 `;
 
 export const Header = styled.header`
   display: flex;
   align-items: center;
-  height: 70px;
+  height: 4.375rem;
   border-bottom: 1px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(
@@ -30,9 +30,9 @@ export const Header = styled.header`
   );
 
   div {
-    width: 37px;
-    height: 37px;
-    margin-left: 20px;
+    width: 2.3125rem;
+    height: 2.3125rem;
+    margin-left: 1.25rem;
     border-radius: 50%;
     background: linear-gradient(
       140.24deg,
@@ -45,11 +45,11 @@ export const Header = styled.header`
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 13px;
+    font-size: 1.25rem;
+    line-height: 0.8125rem;
     color: #efefd0;
     position: relative;
-    left: -18px;
+    left: -1.125rem;
 
     span {
       color: #fe7f2d;
@@ -64,20 +64,20 @@ export const Content = styled.div`
   justify-content: center;
 
   div {
-    margin: 50px auto;
+    margin: 3.125rem auto;
     p {
       text-align: justify;
-      width: 520px;
+      width: 32.5rem;
       font-family: Poppins;
       font-weight: lighter;
-      font-size: 16px;
-      line-height: 25px;
+      font-size: 1rem;
+      line-height: 1.5625rem;
       color: rgba(245, 245, 245, 0.55);
     }
   }
 
   svg {
-    width: 270px;
-    height: 265px;
+    width: 16.875rem;
+    height: 16.5625rem;
   }
 `;

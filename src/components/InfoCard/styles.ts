@@ -155,6 +155,7 @@ export const Footer = styled.div`
 
   a {
     display: flex;
+    align-items: center;
     color: #efefd0;
     cursor: pointer;
     text-decoration: none;
@@ -171,8 +172,14 @@ export const Footer = styled.div`
       line-height: 24px;
       padding: 10px 0;
     }
-  }
-  svg {
-    margin-left: 10px;
+    svg {
+      margin-left: 10px;
+
+      &:hover {
+        path {
+          fill: #ff9800;
+        }
+      }
+    }
   }
 `;

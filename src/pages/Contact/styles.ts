@@ -12,16 +12,16 @@ export const Container = styled.div`
 export const CardDescription = styled.div`
   display: flex;
   flex-direction: column;
-  width: 685px;
-  height: 685px;
+  width: 42.8125rem;
+  height: 42.8125rem;
   background: #31313a;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
 `;
 
 export const Header = styled.header`
   display: flex;
   align-items: center;
-  height: 70px;
+  height: 4.375rem;
   border-bottom: 1px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(
@@ -31,9 +31,9 @@ export const Header = styled.header`
   );
 
   div {
-    width: 37px;
-    height: 37px;
-    margin-left: 20px;
+    width: 2.3125rem;
+    height: 2.3125rem;
+    margin-left: 1.25rem;
     border-radius: 50%;
     background: linear-gradient(
       140.24deg,
@@ -46,11 +46,11 @@ export const Header = styled.header`
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 13px;
+    font-size: 1.25rem;
+    line-height: 0.8125rem;
     color: #efefd0;
     position: relative;
-    left: -18px;
+    left: -1.125rem;
 
     span {
       color: #fe7f2d;
@@ -68,55 +68,55 @@ export const Content = styled.div`
   h2 {
     text-align: center;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
     color: #efefd0;
-    margin: 70px 0;
+    margin: 4.375rem 0;
   }
 
   div {
     p {
-      width: 485px;
+      width: 30.3125rem;
       font-weight: 500;
-      font-size: 15px;
-      line-height: 24px;
+      font-size: 0.9375rem;
+      line-height: 1.5rem;
       color: #fe7f2d;
       margin: 0;
     }
 
     div {
       display: flex;
-      margin-top: 40px;
+      margin-top: 2.5rem;
 
       svg {
-        width: 27px;
-        height: 27px;
+        width: 1.6875rem;
+        height: 1.6875rem;
         margin: 0;
-        margin-right: 10px;
+        margin-right: 0.625rem;
       }
 
       p {
         margin: 0;
         font-weight: 500;
-        font-size: 12px;
-        line-height: 24px;
+        font-size: 0.75rem;
+        line-height: 1.5rem;
       }
     }
 
     & + div {
-      margin-top: 16px;
+      margin-top: 1rem;
     }
   }
 
   a {
     position: relative;
-    top: 150px;
-    padding: 15px;
+    top: 9.375rem;
+    padding: 0.9375rem;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 13px;
+    font-size: 0.75rem;
+    line-height: 0.8125rem;
     background: rgba(254, 127, 45, 0.9);
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
     text-decoration: none;
     color: #efefd0;

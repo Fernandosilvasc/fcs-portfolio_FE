@@ -12,38 +12,38 @@ export const Container = styled.div`
   scrollbar-color: #65656c transparent;
 
   *::-webkit-scrollbar {
-    width: 5px;
+    width: 0.3125rem;
   }
   *::-webkit-scrollbar-track {
     background: transparent;
   }
   *::-webkit-scrollbar-thumb {
     background-color: #65656c;
-    border-radius: 20px;
+    border-radius: 1.25rem;
   }
 `;
 
 export const BoxContent = styled.div`
   display: flex;
   flex-direction: column;
-  width: 840px;
-  height: 800px;
+  width: 52.5rem;
+  height: 50rem;
   background: #31313a;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 
   & > a {
-    width: 60px;
+    width: 3.75rem;
     position: relative;
-    right: -740px;
-    margin: 20px;
+    right: -46.25rem;
+    margin: 1.25rem;
     text-decoration: none;
     text-align: center;
-    font-size: 10px;
+    font-size: 0.625rem;
     font-weight: bold;
     color: #efefd0;
-    padding: 10px 0;
+    padding: 0.625rem 0;
     border: 1px solid rgba(254, 127, 45, 0.9);
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     transition: background 0.4s;
 
     &:hover {
@@ -56,7 +56,7 @@ export const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 4.375rem;
   border-bottom: 1px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(
@@ -69,9 +69,9 @@ export const Header = styled.header`
     display: flex;
     align-items: center;
     div {
-      width: 37px;
-      height: 37px;
-      margin-left: 20px;
+      width: 2.3125rem;
+      height: 2.3125rem;
+      margin-left: 1.25rem;
       border-radius: 50%;
       background: linear-gradient(
         140.24deg,
@@ -84,11 +84,12 @@ export const Header = styled.header`
       font-family: Poppins;
       font-style: normal;
       font-weight: bold;
-      font-size: 20px;
-      line-height: 13px;
+      font-size: 1.25rem;
+      line-height: 0.8125rem;
       color: #efefd0;
       position: relative;
-      left: -48px;
+      left: -2.5rem;
+      color: #fe7f2d;
 
       span {
         color: #fe7f2d;
@@ -98,19 +99,19 @@ export const Header = styled.header`
 
   div {
     display: flex;
-    margin-right: 20px;
+    margin-right: 1.25rem;
 
     a {
-      padding: 10px;
+      padding: 0.625rem;
       font-weight: bold;
-      font-size: 12px;
+      font-size: 0.75rem;
       background: rgba(254, 127, 45, 0.9);
       border: none;
-      border-radius: 5px;
+      border-radius: 0.3125rem;
       filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
       text-decoration: none;
       color: #efefd0;
-      margin-right: 10px;
+      margin-right: 0.625rem;
 
       &:hover {
         background: ${shade(0.2, 'rgba(254, 127, 45, 0.9)')};
@@ -121,7 +122,7 @@ export const Header = styled.header`
     a:nth-child(2) {
       background: none;
       border: 1px solid rgba(254, 127, 45, 0.9);
-      border-radius: 5px;
+      border-radius: 0.3125rem;
 
       &:hover {
         color: ${shade(0.2, '#efefd0')};
@@ -138,9 +139,9 @@ export const Content = styled.div`
   overflow-y: scroll;
 
   img {
-    margin-top: 50px;
-    width: 354px;
-    height: 232px;
+    margin-top: 3.125rem;
+    width: 22.125rem;
+    height: 14.5rem;
   }
 `;
 
@@ -152,18 +153,18 @@ export const ProjectDescription = styled.div`
 export const Technologies = styled.div`
   display: flex;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 3.125rem;
 
   h2 {
-    width: 115px;
+    width: 7.1875rem;
     text-align: right;
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 10px;
+    font-size: 1rem;
+    line-height: 0.625rem;
     color: #efefd0;
-    margin-right: 20px;
+    margin-right: 1.25rem;
   }
 
   div {
@@ -172,18 +173,18 @@ export const Technologies = styled.div`
 
     div {
       border-right: 1px solid #efefd0;
-      padding-right: 5px;
-      margin-right: 5px;
+      padding-right: 0.3125rem;
+      margin-right: 0.3125rem;
 
       span {
         color: #efefd0;
         font-family: Poppins;
         font-weight: 500;
-        font-size: 12px;
-        line-height: 13px;
-        padding: 10px;
+        font-size: 0.75rem;
+        line-height: 0.8125rem;
+        padding: 0.625rem;
         background: rgba(254, 127, 45, 0.9);
-        border-radius: 3px;
+        border-radius: 0.1875rem;
       }
 
       &:last-child {
@@ -196,17 +197,17 @@ export const Technologies = styled.div`
 export const Tools = styled.div`
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 
   h2 {
-    width: 115px;
+    width: 7.1875rem;
     text-align: right;
     font-family: Poppins;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 10px;
+    font-size: 1rem;
+    line-height: 0.625rem;
     color: #efefd0;
-    margin-right: 20px;
+    margin-right: 1.25rem;
   }
 
   div {
@@ -215,18 +216,18 @@ export const Tools = styled.div`
 
     div {
       border-right: 1px solid #efefd0;
-      padding-right: 5px;
-      margin-right: 5px;
+      padding-right: 0.3125rem;
+      margin-right: 0.3125rem;
 
       span {
         color: #efefd0;
         font-family: Poppins;
         font-weight: 500;
-        font-size: 12px;
-        line-height: 13px;
-        padding: 10px;
+        font-size: 0.75rem;
+        line-height: 0.8125rem;
+        padding: 0.625rem;
         border: 2px solid rgba(254, 127, 45, 0.9);
-        border-radius: 3px;
+        border-radius: 0.1875rem;
       }
 
       &:last-child {
@@ -238,44 +239,44 @@ export const Tools = styled.div`
 
 export const Description = styled.div`
   display: flex;
-  margin: 50px 0;
+  margin: 3.125rem 0;
   font-family: Poppins;
 
   h2 {
-    width: 115px;
+    width: 7.1875rem;
     text-align: right;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
     color: #efefd0;
-    margin: 20px 20px 0 0;
+    margin: 1.25rem 1.25rem 0 0;
   }
 
   div {
-    width: 415px;
+    width: 25.9375rem;
 
     h3 {
-      margin: 20px 0px;
-      font-size: 20px;
+      margin: 1.25rem 0px;
+      font-size: 1.25rem;
       color: #fe7f2d;
     }
 
     h4 {
-      font-size: 16px;
+      font-size: 1rem;
       color: #fe7f2d;
     }
 
     p {
       font-weight: 300;
-      font-size: 16px;
-      line-height: 30px;
+      font-size: 1rem;
+      line-height: 1.875rem;
       color: rgba(245, 245, 245, 0.55);
       margin: 0px;
     }
 
     div {
       p {
-        margin-left: 10px;
-        font-size: 13px;
+        margin-left: 0.625rem;
+        font-size: 0.8125rem;
       }
     }
   }

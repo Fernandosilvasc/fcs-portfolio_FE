@@ -11,16 +11,16 @@ export const Container = styled.div`
 export const CardDescription = styled.div`
   display: flex;
   flex-direction: column;
-  width: 685px;
-  height: 685px;
+  width: 42.8125rem;
+  height: 42.8125rem;
   background: #31313a;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
 `;
 
 export const Header = styled.header`
   display: flex;
   align-items: center;
-  height: 70px;
+  height: 4.375rem;
   border-bottom: 1px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(
@@ -30,9 +30,9 @@ export const Header = styled.header`
   );
 
   div {
-    width: 37px;
-    height: 37px;
-    margin-left: 20px;
+    width: 2.3125rem;
+    height: 2.3125rem;
+    margin-left: 1.25rem;
     border-radius: 50%;
     background: linear-gradient(
       140.24deg,
@@ -45,11 +45,11 @@ export const Header = styled.header`
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 13px;
+    font-size: 1.25rem;
+    line-height: 0.8125rem;
     color: #efefd0;
     position: relative;
-    left: -18px;
+    left: -1.125rem;
 
     span {
       color: #fe7f2d;
@@ -58,44 +58,44 @@ export const Header = styled.header`
 `;
 
 export const BoxIntroduction = styled.div`
-  padding-left: 110px;
-  padding-top: 70px;
+  padding-left: 6.875rem;
+  padding-top: 4.375rem;
 
   h2 {
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 13px;
+    font-size: 0.875rem;
+    line-height: 0.8125rem;
     text-transform: uppercase;
     color: #efefd0;
   }
 
   ul {
-    margin-top: 50px;
+    margin-top: 3.125rem;
     list-style: none;
 
     li {
       display: flex;
       align-items: center;
-      height: 20px;
-      margin-bottom: 20px;
+      height: 1.25rem;
+      margin-bottom: 1.25rem;
 
       p,
       a {
         font-family: Poppins;
         font-style: normal;
         font-weight: 600;
-        font-size: 12px;
-        line-height: 13px;
+        font-size: 0.75rem;
+        line-height: 0.8125rem;
         color: #fe7f2d;
         text-decoration: none;
       }
 
       svg {
-        margin-right: 10px;
-        width: 25px;
-        height: 20px;
+        margin-right: 0.625rem;
+        width: 1.5625rem;
+        height: 1.25rem;
       }
     }
   }
@@ -105,28 +105,16 @@ export const BoxSkills = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 70px;
+  padding-top: 4.375rem;
 
   h2 {
-    padding-left: 110px;
+    padding-left: 6.875rem;
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 13px;
+    font-size: 0.875rem;
+    line-height: 0.8125rem;
     text-transform: uppercase;
     color: #efefd0;
   }
-
-  /* div {
-    margin: 0 auto;
-
-    ul {
-      display: flex;
-      list-style: none;
-      width: 250px;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-  } */
 `;

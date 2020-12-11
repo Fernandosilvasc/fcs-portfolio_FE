@@ -6,12 +6,11 @@ export const Container = styled.div`
 
 export const ListSkill = styled.ul`
   display: flex;
-  /* gap: 30px; */
   list-style: none;
-  width: 250px;
+  width: 15.625rem;
   flex-wrap: wrap;
 `;
 
 export const Skill = styled.li`
-  margin: 10px;
+  margin: 0.625rem;
 `;
