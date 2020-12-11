@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   Container,
   CardDescription,
@@ -17,6 +17,10 @@ import { ReactComponent as LinkedInIcon } from '../../assets/linkedIn.svg';
 import IconsSkill from './IconsSkill/index';
 
 const Home: React.FC = () => {
+  useEffect(() => {
+    localStorage.removeItem('@FCS_Portfolio:project');
+  }, []);
+
   return (
     <>
       <Container>

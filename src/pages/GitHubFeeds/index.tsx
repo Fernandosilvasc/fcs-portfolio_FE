@@ -71,6 +71,7 @@ const GitHubFeeds: React.FC = (): any => {
   };
 
   useEffect(() => {
+    localStorage.removeItem('@FCS_Portfolio:project');
     setLoading(true);
     loadData();
   }, []);

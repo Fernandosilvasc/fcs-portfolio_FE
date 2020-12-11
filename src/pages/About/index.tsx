@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { Container, CardDescription, Header, Content } from './styles';
 
@@ -7,6 +7,10 @@ import InfoCard from '../../components/InfoCard/index';
 import { ReactComponent as Illustration } from '../../assets/illustration.svg';
 
 const About: React.FC = () => {
+  useEffect(() => {
+    localStorage.removeItem('@FCS_Portfolio:project');
+  }, []);
+
   return (
     <>
       <Container>

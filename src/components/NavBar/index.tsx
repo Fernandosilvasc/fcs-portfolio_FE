@@ -6,7 +6,6 @@ import buttons from '../../data/buttons';
 
 const NavBar: React.FC = () => {
   const [buttonActive, setButtonActive] = useState({ active: 0, type: 'all' });
-  console.log(buttonActive);
 
   return (
     <Navbar>

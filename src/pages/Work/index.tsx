@@ -50,6 +50,7 @@ const Work: React.FC = () => {
   });
 
   useEffect(() => {
+    localStorage.removeItem('@FCS_Portfolio:project');
     const { typeProject } = buttonActive;
 
     if (typeProject === 'All') {
