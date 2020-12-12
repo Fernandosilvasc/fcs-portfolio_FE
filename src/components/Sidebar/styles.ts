@@ -8,7 +8,7 @@ export const NavContainer = styled.div`
   padding: 0;
 `;
 
-export const NavLink = styled.div`
+export const MainLink = styled.div`
   width: 70px;
   height: 67px;
   background: #31313a;
@@ -99,6 +99,17 @@ export const Navbar = styled.div`
 
     &:last-child {
       border: none;
+    }
+  }
+
+  .active {
+    svg {
+      path {
+        fill: #ff9800;
+      }
+    }
+    p {
+      color: #ff9800;
     }
   }
 `;

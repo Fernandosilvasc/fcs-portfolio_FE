@@ -162,6 +162,11 @@ export const Footer = styled.div`
 
     &:hover {
       color: #fe7f2d;
+      svg {
+        path {
+          fill: #ff9800;
+        }
+      }
     }
 
     p {

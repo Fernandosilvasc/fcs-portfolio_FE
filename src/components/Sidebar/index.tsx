@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import { ReactComponent as NavButton } from '../../assets/navButton.svg';
 import { ReactComponent as HomeBtn } from '../../assets/home-btn.svg';
@@ -7,38 +7,39 @@ import { ReactComponent as AboutBtn } from '../../assets/about-btn.svg';
 import { ReactComponent as WorkBtn } from '../../assets/work-btn.svg';
 import { ReactComponent as ContactBtn } from '../../assets/contact-btn.svg';
 import { ReactComponent as GithubBtn } from '../../assets/github-btn.svg';
-import { NavContainer, NavLink, Navbar } from './styles';
+import { NavContainer, MainLink, Navbar } from './styles';
 
 const Sidebar: React.FC = () => {
   return (
     <>
       <NavContainer>
-        <NavLink>
+        <MainLink>
           <Link to="/">
             <NavButton />
           </Link>
-        </NavLink>
+        </MainLink>
+
         <Navbar>
-          <Link to="/">
+          <NavLink exact to="/">
             <HomeBtn />
             <p>Home</p>
-          </Link>
-          <Link to="/about">
+          </NavLink>
+          <NavLink to="about">
             <AboutBtn />
             <p>About</p>
-          </Link>
-          <Link to="/work">
+          </NavLink>
+          <NavLink to="/work">
             <WorkBtn />
             <p>Work</p>
-          </Link>
-          <Link to="/contact">
+          </NavLink>
+          <NavLink to="/contact">
             <ContactBtn />
             <p>Contact</p>
-          </Link>
-          <Link to="/githubFeeds">
+          </NavLink>
+          <NavLink to="/githubFeeds">
             <GithubBtn />
             <p>Feeds</p>
-          </Link>
+          </NavLink>
         </Navbar>
       </NavContainer>
     </>
