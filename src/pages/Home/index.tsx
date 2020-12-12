@@ -3,6 +3,7 @@ import {
   Container,
   CardDescription,
   Header,
+  Content,
   BoxIntroduction,
   BoxSkills,
 } from './styles';
@@ -30,43 +31,45 @@ const Home: React.FC = () => {
               Everyone !
             </h2>
           </Header>
-          <BoxIntroduction>
-            <h2>Introduction</h2>
-            <ul>
-              <li>
-                <ComputerIcon />
-                <p>&#8212; FullStack Developer</p>
-              </li>
-              <li>
-                <MapIcon />
-                <p>&#8212; Lives in Surrey, CA</p>
-              </li>
-              <li>
-                <GitHubIcon />
-                <a
-                  href="https://github.com/Fernandosilvasc"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  &#8212; GitHub link
-                </a>
-              </li>
-              <li>
-                <LinkedInIcon />
-                <a
-                  href="https://www.linkedin.com/in/fernando-correa-da-silva/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  &#8212; LinkedIn link
-                </a>
-              </li>
-            </ul>
-          </BoxIntroduction>
-          <BoxSkills>
-            <h2>Skills</h2>
-            <IconsSkill />
-          </BoxSkills>
+          <Content>
+            <BoxIntroduction>
+              <h2>Introduction</h2>
+              <ul>
+                <li>
+                  <ComputerIcon />
+                  <p>&#8212; FullStack Developer</p>
+                </li>
+                <li>
+                  <MapIcon />
+                  <p>&#8212; Lives in Surrey, CA</p>
+                </li>
+                <li>
+                  <GitHubIcon />
+                  <a
+                    href="https://github.com/Fernandosilvasc"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    &#8212; GitHub link
+                  </a>
+                </li>
+                <li>
+                  <LinkedInIcon />
+                  <a
+                    href="https://www.linkedin.com/in/fernando-correa-da-silva/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    &#8212; LinkedIn link
+                  </a>
+                </li>
+              </ul>
+            </BoxIntroduction>
+            <BoxSkills>
+              <h2>Skills</h2>
+              <IconsSkill />
+            </BoxSkills>
+          </Content>
         </CardDescription>
       </Container>
     </>

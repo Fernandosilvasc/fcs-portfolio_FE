@@ -69,6 +69,7 @@ export const Header = styled.header`
       color: #efefd0;
       position: relative;
       left: -1.125rem;
+      text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 
       span {
         color: #fe7f2d;

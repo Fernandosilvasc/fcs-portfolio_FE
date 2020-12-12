@@ -15,6 +15,11 @@ export const CardDescription = styled.div`
   height: 42.8125rem;
   background: #31313a;
   border-radius: 0.3125rem;
+
+  @media screen and (max-width: 1400px) {
+    width: 600px;
+    height: 600px;
+  }
 `;
 
 export const Header = styled.header`
@@ -50,16 +55,42 @@ export const Header = styled.header`
     color: #efefd0;
     position: relative;
     left: -1.125rem;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 
     span {
       color: #fe7f2d;
     }
   }
+
+  @media screen and (max-width: 1400px) {
+    height: 3.75rem;
+
+    div {
+      width: 2.125rem;
+      height: 2.125rem;
+    }
+
+    h2 {
+      font-size: 1.125rem;
+    }
+  }
+`;
+
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  padding: 2.5rem 0;
+
+  @media screen and (max-width: 1400px) {
+    padding: 1.875rem 0;
+  }
 `;
 
 export const BoxIntroduction = styled.div`
-  padding-left: 6.875rem;
-  padding-top: 4.375rem;
+  width: 25rem;
 
   h2 {
     font-family: Poppins;
@@ -99,16 +130,40 @@ export const BoxIntroduction = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 1400px) {
+    h2 {
+      font-size: 0.8125rem;
+      line-height: 0.75rem;
+    }
+
+    ul {
+      margin-top: 3.125rem;
+
+      li {
+        p,
+        a {
+          font-size: 0.6875rem;
+        }
+
+        svg {
+          margin-right: 0.625rem;
+          width: 1.5rem;
+          height: 1.125rem;
+        }
+      }
+    }
+  }
 `;
 
 export const BoxSkills = styled.div`
+  width: 25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 4.375rem;
+  margin-top: 4.375rem;
 
   h2 {
-    padding-left: 6.875rem;
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
@@ -116,5 +171,13 @@ export const BoxSkills = styled.div`
     line-height: 0.8125rem;
     text-transform: uppercase;
     color: #efefd0;
+  }
+
+  @media screen and (max-width: 1400px) {
+    margin-top: 2.5rem;
+
+    h2 {
+      font-size: 0.8125rem;
+    }
   }
 `;
