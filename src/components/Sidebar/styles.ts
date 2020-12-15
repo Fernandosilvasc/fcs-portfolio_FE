@@ -6,6 +6,10 @@ export const NavContainer = styled.div`
   margin: 3.75rem;
   margin-left: 0;
   padding: 0;
+
+  @media screen and (max-width: 1200px) {
+    margin-right: 2.5rem;
+  }
 `;
 
 export const MainLink = styled.div`
@@ -50,12 +54,23 @@ export const MainLink = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 1200px) {
+    width: 3.125rem;
+    height: 3.125rem;
+
+    a {
+      svg {
+        width: 2.125rem;
+        height: 1.375rem;
+      }
+    }
+  }
 `;
 
 export const Navbar = styled.div`
   display: flex;
   flex-direction: column;
-  /* width: 4.375rem; */
   justify-content: center;
   margin-top: 2.5rem;
   background: #31313a;
@@ -83,7 +98,6 @@ export const Navbar = styled.div`
       margin: 0 auto;
       width: 3.125rem;
       height: 1.6875rem;
-      /* padding-top: 0.625rem; */
       path {
         fill: #efefd0;
       }
@@ -94,12 +108,11 @@ export const Navbar = styled.div`
       font-weight: bold;
       font-size: 0.6875rem;
       text-transform: uppercase;
-      line-height: 0.6875rem;
+      /* line-height: 0.6875rem; */
       color: #efefd0;
       text-align: center;
       margin: 0;
       padding-top: 0.3125rem;
-      /* padding-bottom: 0.625rem; */
     }
 
     &:hover {
@@ -144,7 +157,23 @@ export const Navbar = styled.div`
 
       p {
         font-size: 0.5rem;
-        line-height: 0.6875rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 3.125rem;
+
+    a {
+      width: 3.125rem;
+
+      svg {
+        width: 2.125rem;
+        height: 1.125rem;
+      }
+
+      p {
+        font-size: 0.4375rem;
       }
     }
   }

@@ -13,6 +13,7 @@ import {
 } from './styles';
 
 import Sidebar from '../../components/Sidebar/index';
+import Footer from '../../components/Footer/index';
 import { useProject } from '../../hooks/Projects';
 
 import Database from '../../data/projects';
@@ -26,6 +27,10 @@ interface ProjectState {
   tools: Array<string>;
   webLink: string;
   github: string;
+  about: string[];
+  features: string[];
+  learned: string[];
+  challenges: string[];
 }
 
 const Project: React.FC = () => {
@@ -69,14 +74,14 @@ const Project: React.FC = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  GitHub-Link
+                  GitHub
                 </a>
                 <a
                   href={currentProject.webLink}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Visit Website
+                  Website
                 </a>
               </div>
             </Header>
@@ -107,43 +112,17 @@ const Project: React.FC = () => {
                   <h2>Project</h2>
                   <div>
                     <h3>About this project</h3>
-                    <p>
-                      The Happy application was a project that #Rocketseat had
-                      proposed during #NLW3 event which had as objective to
-                      motivate people to connect with orphanages or institutes
-                      that have a responsibility the care for older people or
-                      who not have a shelter.
-                    </p>
-
+                    <p>{currentProject.about}</p>
                     <div>
                       <h4>Features</h4>
-                      <p>* Lorem ipsum dolor sit amet.</p>
-                      <p>
-                        * Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit.
-                      </p>
-                      <p>
-                        * Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit.
-                      </p>
+                      {currentProject.features.map(feature => (
+                        <p>{feature}</p>
+                      ))}
                     </div>
-
                     <h3>What I learned</h3>
-                    <p>
-                      The Happy application was a project that #Rocketseat had
-                      proposed during #NLW3 event which had as objective to
-                      motivate people to connect with orphanages or institutes
-                      that have a responsibility the care for older people or
-                      who not have a shelter.
-                    </p>
+                    <p>{currentProject.learned}</p>
                     <h3>Challenges faced</h3>
-                    <p>
-                      The Happy application was a project that #Rocketseat had
-                      proposed during #NLW3 event which had as objective to
-                      motivate people to connect with orphanages or institutes
-                      that have a responsibility the care for older people or
-                      who not have a shelter.
-                    </p>
+                    <p>{currentProject.challenges}</p>
                   </div>
                 </Description>
               </ProjectDescription>
@@ -152,6 +131,7 @@ const Project: React.FC = () => {
           </BoxContent>
         )}
       </Container>
+      <Footer />
     </>
   );
 };

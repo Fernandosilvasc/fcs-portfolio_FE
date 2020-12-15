@@ -15,6 +15,8 @@ import { ReactComponent as FolderImg } from '../../assets/folder.svg';
 import { ReactComponent as ArrowLink } from '../../assets/arrowLink.svg';
 import Sidebar from '../../components/Sidebar/index';
 import InforCard from '../../components/InfoCard/index';
+import Footer from '../../components/Footer/index';
+
 import api from '../../services/api';
 
 interface Repository {
@@ -135,6 +137,7 @@ const GitHubFeeds: React.FC = (): any => {
           </BoxProject>
         </CardDescription>
       </Container>
+      <Footer />
     </>
   );
 };

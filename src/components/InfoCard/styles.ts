@@ -13,6 +13,11 @@ export const Container = styled.div`
   @media screen and (max-width: 1400px) {
     width: 21.5625rem;
     height: 39.0625rem;
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 20rem;
+    height: 35.9375rem;
   } ;
 `;
 
@@ -28,6 +33,11 @@ export const ImageBackground = styled.div`
   @media screen and (max-width: 1400px) {
     width: 21.5625rem;
     height: 16.9375rem;
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 20rem;
+    height: 16.875rem;
   } ;
 `;
 
@@ -47,7 +57,14 @@ export const Abstract = styled.div`
     border-top: 2.1875rem solid transparent;
     border-left: 10.7813rem solid #31313a;
     border-right: 10.7813rem solid #31313a;
-  } ;
+  }
+
+  @media screen and (max-width: 1200px) {
+    top: -2.1875rem;
+    border-top: 35px solid transparent;
+    border-left: 10rem solid #31313a;
+    border-right: 10rem solid #31313a;
+  }
 `;
 
 export const Content = styled.div`
@@ -110,7 +127,22 @@ export const Avatar = styled.div`
       width: 6.875rem;
       height: 6.875rem;
     }
-  } ;
+  }
+
+  @media screen and (max-width: 1200px) {
+    top: -5.9375rem;
+
+    .avatar {
+      width: 6.25rem;
+      height: 6.25rem;
+    }
+
+    div {
+      top: -5.9375rem;
+      width: 6.25rem;
+      height: 6.25rem;
+    }
+  }
 `;
 
 export const InfoDescription = styled.div`
@@ -145,6 +177,16 @@ export const InfoDescription = styled.div`
 
     p {
       font-size: 0.875rem;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.75rem;
     }
   } ;
 `;
@@ -182,6 +224,17 @@ export const Links = styled.div`
       svg {
         width: 2.375rem;
         height: 1.25rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    top: 0.625rem;
+
+    a {
+      svg {
+        width: 2.25rem;
+        height: 1.125rem;
       }
     }
   } ;
@@ -247,6 +300,19 @@ export const Footer = styled.div`
         margin-left: 0.3125rem;
         width: 1rem;
         height: 1rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    a {
+      p {
+        font-size: 0.75rem;
+      }
+      svg {
+        margin-left: 0.3125rem;
+        width: 0.875rem;
+        height: 0.875rem;
       }
     }
   } ;

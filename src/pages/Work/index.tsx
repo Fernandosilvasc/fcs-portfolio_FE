@@ -17,6 +17,7 @@ import {
 
 import Sidebar from '../../components/Sidebar/index';
 import InfoCard from '../../components/InfoCard/index';
+import Footer from '../../components/Footer/index';
 
 import Database from '../../data/projects';
 import buttons from '../../data/buttons';
@@ -104,11 +105,13 @@ const Work: React.FC = () => {
                   <ImgProject src={project.imgPath[0]} alt={project.name} />
 
                   <Content>
-                    <h2>{project.name}</h2>
                     <div>
-                      {project.techs.map(techs => (
-                        <h3 key={techs}>{techs}</h3>
-                      ))}
+                      <h2>{project.name}</h2>
+                      <div>
+                        {project.techs.map(techs => (
+                          <h3 key={techs}>{techs}</h3>
+                        ))}
+                      </div>
                     </div>
                     <Buttons>
                       <Link
@@ -129,6 +132,7 @@ const Work: React.FC = () => {
           </BoxProject>
         </CardDescription>
       </Container>
+      <Footer />
     </>
   );
 };

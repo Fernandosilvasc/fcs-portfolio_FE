@@ -5,7 +5,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
   font-family: Poppins;
 
   scrollbar-width: thin;
@@ -30,6 +30,15 @@ export const CardDescription = styled.div`
   height: 42.8125rem;
   background: #31313a;
   border-radius: 0.3125rem;
+
+  @media screen and (max-width: 1400px) {
+    width: 37.5rem;
+    height: 37.5rem;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 32.5rem;
+    height: 34.375rem;
+  }
 `;
 
 export const Header = styled.header`
@@ -59,7 +68,6 @@ export const Header = styled.header`
         rgba(255, 152, 0, 0.01) 82.68%
       );
     }
-
     h2 {
       font-family: Poppins;
       font-style: normal;
@@ -81,9 +89,46 @@ export const Header = styled.header`
     font-family: Poppins;
     font-weight: 500;
     font-size: 0.875rem;
-    line-height: 1.5rem;
-    color: #fe7f2d;
     margin-right: 1.25rem;
+    color: #fe7f2d;
+  }
+
+  @media screen and (max-width: 1400px) {
+    height: 3.75rem;
+    div {
+      div {
+        width: 2.125rem;
+        height: 2.125rem;
+      }
+      h2 {
+        font-size: 1.125rem;
+      }
+    }
+
+    p {
+      font-size: 0.75rem;
+      margin-right: 1.25rem;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    height: 3.125rem;
+
+    div {
+      div {
+        width: 1.875rem;
+        height: 1.875rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+        left: -1rem;
+      }
+    }
+    p {
+      font-size: 0.625rem;
+      margin-right: 1.25rem;
+    }
   }
 `;
 
@@ -104,6 +149,26 @@ export const BoxProject = styled.div`
   .loader {
     margin: 7.5rem auto;
   }
+
+  @media screen and (max-width: 1400px) {
+    h2 {
+      font-size: 1.25rem;
+    }
+
+    .loader {
+      margin: 7.5rem auto;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    h2 {
+      font-size: 1.125rem;
+    }
+
+    .loader {
+      margin: 7.5rem auto;
+    }
+  }
 `;
 
 export const ProjectContainer = styled.div`
@@ -111,6 +176,16 @@ export const ProjectContainer = styled.div`
   flex-wrap: wrap;
   width: 33.125rem;
   margin: 2.5rem auto;
+
+  @media screen and (max-width: 1400px) {
+    width: 29.5rem;
+    margin: 1.875rem auto;
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 28.25rem;
+    margin: 1.25rem auto;
+  }
 `;
 
 export const Project = styled.div`
@@ -128,6 +203,11 @@ export const Project = styled.div`
     align-items: flex-start;
     margin: 0.625rem 1.25rem 0 1.25rem;
 
+    svg {
+      width: 1.5625rem;
+      height: 1.25rem;
+    }
+
     a {
       svg {
         width: 0.75rem;
@@ -137,6 +217,48 @@ export const Project = styled.div`
           path {
             fill: #ff9800;
           }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    width: 13.75rem;
+    height: 10.625rem;
+    margin: 0.5rem;
+
+    div {
+      margin: 0.5rem 1.25rem 0 1.25rem;
+
+      svg {
+        width: 1.4375rem;
+        height: 1.125rem;
+      }
+
+      a {
+        svg {
+          width: 0.625rem;
+          height: 0.625rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 13.125rem;
+    height: 10rem;
+    margin: 0.5rem;
+
+    div {
+      svg {
+        width: 1.4375rem;
+        height: 1.125rem;
+      }
+
+      a {
+        svg {
+          width: 0.625rem;
+          height: 0.625rem;
         }
       }
     }
@@ -155,7 +277,6 @@ export const Description = styled.div`
     font-style: normal;
     font-weight: 500;
     font-size: 0.625rem;
-    line-height: 0.9375rem;
     margin: 0.3125rem 0;
   }
 
@@ -180,6 +301,50 @@ export const Description = styled.div`
 
     p:last-child {
       border-right: none;
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    h3 {
+      font-size: 0.625rem;
+      margin: 0.3125rem 0;
+    }
+
+    p {
+      font-size: 0.5625rem;
+      line-height: 0.8438rem;
+      margin: 0;
+      margin-bottom: 0.625rem;
+    }
+
+    div {
+      margin: 0 auto;
+      p {
+        margin-right: 0.3125rem;
+        padding-right: 0.3125rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    h3 {
+      font-size: 0.5625rem;
+      margin: 0.3125rem 0;
+    }
+
+    p {
+      font-size: 0.5rem;
+      line-height: 0.75rem;
+      margin: 0;
+      margin-bottom: 0.625rem;
+    }
+
+    div {
+      margin: 0 auto;
+      p {
+        margin-right: 0.3125rem;
+        padding-right: 0.3125rem;
+      }
     }
   }
 `;

@@ -5,7 +5,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
 `;
 
 export const CardDescription = styled.div`
@@ -15,6 +15,15 @@ export const CardDescription = styled.div`
   height: 42.8125rem;
   background: #31313a;
   border-radius: 0.3125rem;
+
+  @media screen and (max-width: 1400px) {
+    width: 37.5rem;
+    height: 37.5rem;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 32.5rem;
+    height: 34.375rem;
+  }
 `;
 
 export const Header = styled.header`
@@ -56,6 +65,33 @@ export const Header = styled.header`
       color: #fe7f2d;
     }
   }
+
+  @media screen and (max-width: 1400px) {
+    height: 3.75rem;
+
+    div {
+      width: 2.125rem;
+      height: 2.125rem;
+    }
+
+    h2 {
+      font-size: 1.125rem;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    height: 3.125rem;
+
+    div {
+      width: 1.875rem;
+      height: 1.875rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+      left: -1rem;
+    }
+  }
 `;
 
 export const Content = styled.div`
@@ -63,16 +99,18 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex: 1;
 
   div {
-    margin: 3.125rem auto;
+    margin: 1.25rem auto;
+    width: 32.5rem;
+
     p {
       text-align: justify;
-      width: 32.5rem;
       font-family: Poppins;
       font-weight: lighter;
-      font-size: 1rem;
-      line-height: 1.5625rem;
+      font-size: 16px;
+      line-height: 25px;
       color: rgba(245, 245, 245, 0.55);
     }
   }
@@ -80,5 +118,37 @@ export const Content = styled.div`
   svg {
     width: 16.875rem;
     height: 16.5625rem;
+  }
+
+  @media screen and (max-width: 1400px) {
+    div {
+      margin: 1.25rem auto;
+      width: 28.125rem;
+      p {
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+      }
+    }
+
+    svg {
+      width: 13.75rem;
+      height: 13.4375rem;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    div {
+      margin: 1.25rem auto;
+      width: 25rem;
+      p {
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+      }
+    }
+
+    svg {
+      width: 11.875rem;
+      height: 11.5625rem;
+    }
   }
 `;

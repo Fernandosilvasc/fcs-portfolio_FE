@@ -10,6 +10,7 @@ import {
 
 import Sidebar from '../../components/Sidebar/index';
 import InfoCard from '../../components/InfoCard/index';
+import Footer from '../../components/Footer/index';
 import { ReactComponent as ComputerIcon } from '../../assets/computer.svg';
 import { ReactComponent as MapIcon } from '../../assets/map.svg';
 import { ReactComponent as GitHubIcon } from '../../assets/github.svg';
@@ -72,6 +73,7 @@ const Home: React.FC = () => {
           </Content>
         </CardDescription>
       </Container>
+      <Footer />
     </>
   );
 };

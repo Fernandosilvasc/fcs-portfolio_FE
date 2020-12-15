@@ -5,6 +5,7 @@ import { Container, CardDescription, Header, Content } from './styles';
 
 import Sidebar from '../../components/Sidebar/index';
 import InfoCard from '../../components/InfoCard/index';
+import Footer from '../../components/Footer/index';
 import { ReactComponent as Illustration } from '../../assets/illustration.svg';
 
 const About: React.FC = () => {
@@ -41,6 +42,7 @@ const About: React.FC = () => {
           </Content>
         </CardDescription>
       </Container>
+      <Footer />
     </>
   );
 };

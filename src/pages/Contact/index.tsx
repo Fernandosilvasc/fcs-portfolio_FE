@@ -4,6 +4,7 @@ import { Container, CardDescription, Header, Content } from './styles';
 
 import InfoCard from '../../components/InfoCard';
 import Sidebar from '../../components/Sidebar';
+import Footer from '../../components/Footer/index';
 
 import { ReactComponent as EmailIcon } from '../../assets/email.svg';
 import { ReactComponent as PhoneIcon } from '../../assets/phone.svg';
@@ -49,6 +50,7 @@ const Contact: React.FC = () => {
           </Content>
         </CardDescription>
       </Container>
+      <Footer />
     </>
   );
 };

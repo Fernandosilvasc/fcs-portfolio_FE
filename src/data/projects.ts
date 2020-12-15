@@ -19,6 +19,10 @@ const Projects = [
     type: ['BackEnd', 'FrontEnd', 'Mobile'],
     webLink: 'https://github.com/Fernandosilvasc/GoBarber-App',
     github: 'https://github.com/Fernandosilvasc/GoBarber-App',
+    about: [''],
+    features: [''],
+    learned: [''],
+    challenges: [''],
   },
   {
     id: uuid(),
@@ -30,6 +34,33 @@ const Projects = [
     type: ['BackEnd', 'FrontEnd', 'Mobile'],
     webLink: 'https://github.com/Fernandosilvasc/nlw3-happy',
     github: 'https://github.com/Fernandosilvasc/nlw3-happy',
+    about: [
+      `The Happy application was a project that #Rocketseat had
+    proposed during #NLW3 event which had as objective to
+    motivate people to connect with orphanages or institutes
+    that have a responsibility the care for older people or
+    who not have a shelter.`,
+    ],
+    features: [
+      `* Lorem ipsum dolor sit amet consectetur adipisicing
+    elit.`,
+      ` * Lorem ipsum dolor sit, amet consectetur adipisicing
+    elit.`,
+    ],
+    learned: [
+      `The Happy application was a project that #Rocketseat had
+    proposed during #NLW3 event which had as objective to
+    motivate people to connect with orphanages or institutes
+    that have a responsibility the care for older people or
+    who not have a shelter.`,
+    ],
+    challenges: [
+      `The Happy application was a project that #Rocketseat had
+    proposed during #NLW3 event which had as objective to
+    motivate people to connect with orphanages or institutes
+    that have a responsibility the care for older people or
+    who not have a shelter.`,
+    ],
   },
   {
     id: uuid(),
@@ -42,6 +73,10 @@ const Projects = [
     type: ['FrontEnd'],
     webLink: 'http://www.procaliberlacrosse.com/second/',
     github: '/',
+    about: [''],
+    features: [''],
+    learned: [''],
+    challenges: [''],
   },
   {
     id: uuid(),
@@ -53,6 +88,10 @@ const Projects = [
     type: ['BackEnd', 'FrontEnd', 'Mobile'],
     webLink: 'https://github.com/Fernandosilvasc/nlw3-happy',
     github: 'https://github.com/Fernandosilvasc/nlw3-happy',
+    about: [''],
+    features: [''],
+    learned: [''],
+    challenges: [''],
   },
 ];
 

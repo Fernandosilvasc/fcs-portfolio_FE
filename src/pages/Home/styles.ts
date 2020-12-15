@@ -5,7 +5,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
 `;
 
 export const CardDescription = styled.div`
@@ -17,8 +17,12 @@ export const CardDescription = styled.div`
   border-radius: 0.3125rem;
 
   @media screen and (max-width: 1400px) {
-    width: 600px;
-    height: 600px;
+    width: 37.5rem;
+    height: 37.5rem;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 520px;
+    height: 550px;
   }
 `;
 
@@ -74,6 +78,20 @@ export const Header = styled.header`
       font-size: 1.125rem;
     }
   }
+
+  @media screen and (max-width: 1200px) {
+    height: 3.125rem;
+
+    div {
+      width: 1.875rem;
+      height: 1.875rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+      left: -1rem;
+    }
+  }
 `;
 
 export const Content = styled.div`
@@ -87,17 +105,21 @@ export const Content = styled.div`
   @media screen and (max-width: 1400px) {
     padding: 1.875rem 0;
   }
+
+  @media screen and (max-width: 1200px) {
+    padding: 1.5625rem 0;
+  }
 `;
 
 export const BoxIntroduction = styled.div`
   width: 25rem;
+  padding-top: 1rem;
 
   h2 {
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
     font-size: 0.875rem;
-    line-height: 0.8125rem;
     text-transform: uppercase;
     color: #efefd0;
   }
@@ -118,7 +140,6 @@ export const BoxIntroduction = styled.div`
         font-style: normal;
         font-weight: 600;
         font-size: 0.75rem;
-        line-height: 0.8125rem;
         color: #fe7f2d;
         text-decoration: none;
       }
@@ -154,6 +175,31 @@ export const BoxIntroduction = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 1200px) {
+    width: 20.625rem;
+
+    h2 {
+      font-size: 0.75rem;
+    }
+
+    ul {
+      margin-top: 2.5rem;
+
+      li {
+        p,
+        a {
+          font-size: 0.625rem;
+        }
+
+        svg {
+          margin-right: 0.625rem;
+          width: 1.375rem;
+          height: 1rem;
+        }
+      }
+    }
+  }
 `;
 
 export const BoxSkills = styled.div`
@@ -178,6 +224,15 @@ export const BoxSkills = styled.div`
 
     h2 {
       font-size: 0.8125rem;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 20.625rem;
+    margin-top: 1.25rem;
+
+    h2 {
+      font-size: 0.75rem;
     }
   }
 `;

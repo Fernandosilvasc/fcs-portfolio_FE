@@ -7,22 +7,33 @@ export const Container = styled.div`
 export const ListSkill = styled.ul`
   display: flex;
   list-style: none;
-  width: 15.625rem;
+  width: 250px;
   flex-wrap: wrap;
   padding: 0;
 
   @media screen and (max-width: 1400px) {
-    width: 13.75rem;
+    width: 220px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 200px;
   }
 `;
 
 export const Skill = styled.li`
-  margin: 0.625rem;
+  margin: 10px;
 
   @media screen and (max-width: 1400px) {
     img {
-      width: 2.1875rem;
-      height: 2.1875rem;
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    img {
+      width: 30px;
+      height: 30px;
     }
   }
 `;
