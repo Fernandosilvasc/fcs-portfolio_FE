@@ -15,7 +15,7 @@ import {
   Buttons,
 } from './styles';
 
-import Sidebar from '../../components/Sidebar/index';
+import NavBar from '../../components/NavBar/index';
 import InfoCard from '../../components/InfoCard/index';
 import Footer from '../../components/Footer/index';
 
@@ -67,7 +67,7 @@ const Work: React.FC = () => {
   return (
     <>
       <Container>
-        <Sidebar />
+        <NavBar />
         <InfoCard title="work" />
         <CardDescription>
           <Header>

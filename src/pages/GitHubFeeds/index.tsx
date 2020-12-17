@@ -13,7 +13,7 @@ import {
 
 import { ReactComponent as FolderImg } from '../../assets/folder.svg';
 import { ReactComponent as ArrowLink } from '../../assets/arrowLink.svg';
-import Sidebar from '../../components/Sidebar/index';
+import NavBar from '../../components/NavBar/index';
 import InforCard from '../../components/InfoCard/index';
 import Footer from '../../components/Footer/index';
 
@@ -80,7 +80,7 @@ const GitHubFeeds: React.FC = (): any => {
   return (
     <>
       <Container>
-        <Sidebar />
+        <NavBar />
         <InforCard title="githubFeeds" />
         <CardDescription>
           <Header>

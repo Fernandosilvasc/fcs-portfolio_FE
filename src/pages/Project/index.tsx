@@ -12,7 +12,7 @@ import {
   Description,
 } from './styles';
 
-import Sidebar from '../../components/Sidebar/index';
+import NavBar from '../../components/NavBar/index';
 import Footer from '../../components/Footer/index';
 import { useProject } from '../../hooks/Projects';
 
@@ -59,7 +59,7 @@ const Project: React.FC = () => {
   return (
     <>
       <Container>
-        <Sidebar />
+        <NavBar />
 
         {currentProject && (
           <BoxContent key={currentProject.id}>
@@ -74,14 +74,14 @@ const Project: React.FC = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  GitHub
+                  Website
                 </a>
                 <a
                   href={currentProject.webLink}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Website
+                  GitHub
                 </a>
               </div>
             </Header>

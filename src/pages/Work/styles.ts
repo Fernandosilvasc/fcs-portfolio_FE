@@ -118,7 +118,7 @@ export const Header = styled.header`
   }
 `;
 
-interface FormProps {
+interface ButtonProps {
   active: boolean;
 }
 
@@ -127,7 +127,7 @@ export const Navbar = styled.div`
   margin-right: 1.25rem;
 `;
 
-export const Button = styled.button<FormProps>`
+export const Button = styled.button<ButtonProps>`
   background: none;
   text-transform: uppercase;
   font-family: Poppins;

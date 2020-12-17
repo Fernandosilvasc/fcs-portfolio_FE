@@ -3,7 +3,7 @@ import React from 'react';
 import { Container, CardDescription, Header, Content } from './styles';
 
 import InfoCard from '../../components/InfoCard';
-import Sidebar from '../../components/Sidebar';
+import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer/index';
 
 import { ReactComponent as EmailIcon } from '../../assets/email.svg';
@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
   return (
     <>
       <Container>
-        <Sidebar />
+        <NavBar />
         <InfoCard title="contact" />
         <CardDescription>
           <Header>

@@ -9,6 +9,7 @@ import Work from '../pages/Work/index';
 import Project from '../pages/Project/index';
 import Contact from '../pages/Contact/index';
 import GitHubFeeds from '../pages/GitHubFeeds/index';
+// import HomePortable from '../pages/Home/Portable/index';
 
 const Routes: React.FC = () => (
   <ProjectProvider>
@@ -19,6 +20,7 @@ const Routes: React.FC = () => (
       <Route path="/project/:project+" component={Project} />
       <Route path="/contact" component={Contact} />
       <Route path="/githubFeeds" component={GitHubFeeds} />
+      {/* <Route path="/test" component={HomePortable} /> */}
     </Switch>
   </ProjectProvider>
 );

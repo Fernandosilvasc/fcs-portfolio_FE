@@ -26,29 +26,39 @@ export const Container = styled.div`
 export const BoxContent = styled.div`
   display: flex;
   flex-direction: column;
-  width: 52.5rem;
-  height: 50rem;
+  width: 840px;
+  height: 800px;
   background: #31313a;
   border-radius: 0.625rem;
 
   & > a {
-    width: 3.75rem;
+    width: 60px;
     position: relative;
-    right: -46.25rem;
-    margin: 1.25rem;
+    right: -740px;
+    margin: 20px;
     text-decoration: none;
     text-align: center;
-    font-size: 0.625rem;
+    font-size: 10px;
     font-weight: bold;
     color: #efefd0;
-    padding: 0.625rem 0;
+    padding: 10px 0;
     border: 1px solid rgba(254, 127, 45, 0.9);
-    border-radius: 0.3125rem;
+    border-radius: 5px;
     transition: background 0.4s;
 
     &:hover {
       background: rgba(254, 127, 45, 0.9);
     }
+  }
+
+  @media screen and (max-width: 1400px) {
+    width: 750px;
+    height: 720px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 750px; // change later
+    height: 720px; // change later
   }
 `;
 
@@ -129,6 +139,53 @@ export const Header = styled.header`
       }
     }
   }
+
+  @media screen and (max-width: 1400px) {
+    height: 3.75rem;
+
+    div {
+      div {
+        width: 2.125rem;
+        height: 2.125rem;
+      }
+
+      h2 {
+        font-size: 1.125rem;
+      }
+    }
+
+    div {
+      a {
+        padding: 10px;
+        font-size: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    height: 3.125rem;
+
+    div {
+      div {
+        width: 1.875rem;
+        height: 1.875rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+        left: -40px;
+      }
+    }
+
+    div {
+      a {
+        padding: 10px;
+        font-size: 8px;
+        margin-right: 10px;
+      }
+    }
+  }
 `;
 
 export const Content = styled.div`
@@ -140,8 +197,23 @@ export const Content = styled.div`
 
   img {
     margin-top: 3.125rem;
-    width: 22.125rem;
-    height: 14.5rem;
+    width: 354px;
+    height: 232px;
+  }
+
+  @media screen and (max-width: 1400px) {
+    img {
+      margin-top: 40px;
+      width: 330px;
+      height: 220px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    img {
+      margin-top: 30px;
+      width: 300px;
+      height: 210px;
+    }
   }
 `;
 
@@ -162,7 +234,6 @@ export const Technologies = styled.div`
     font-style: normal;
     font-weight: 600;
     font-size: 1rem;
-    line-height: 0.625rem;
     color: #efefd0;
     margin-right: 1.25rem;
   }
@@ -191,6 +262,31 @@ export const Technologies = styled.div`
         border-right: none;
       }
     }
+  }
+
+  @media screen and (max-width: 1400px) {
+    margin-top: 50px;
+
+    h2 {
+      width: 115px;
+      font-size: 14px;
+      margin-right: 20px;
+    }
+
+    div {
+      div {
+        padding-right: 5px;
+        margin-right: 5px;
+
+        span {
+          font-size: 11px;
+          line-height: 13px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1200px) {
   }
 `;
 
@@ -234,6 +330,29 @@ export const Tools = styled.div`
         border-right: none;
       }
     }
+  }
+
+  @media screen and (max-width: 1400px) {
+    h2 {
+      width: 115px;
+      font-size: 14px;
+      margin-right: 20px;
+    }
+
+    div {
+      div {
+        padding-right: 5px;
+        margin-right: 5px;
+
+        span {
+          font-size: 11px;
+          line-height: 13px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1200px) {
   }
 `;
 
@@ -279,5 +398,43 @@ export const Description = styled.div`
         font-size: 0.8125rem;
       }
     }
+  }
+
+  @media screen and (max-width: 1400px) {
+    margin: 40px 0;
+
+    h2 {
+      width: 115px;
+      font-size: 14px;
+      margin: 20px 20px 0 0;
+    }
+
+    div {
+      width: 415px;
+
+      h3 {
+        margin: 18px 0rem;
+        font-size: 18px;
+      }
+
+      h4 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 30px;
+        margin: 0rem;
+      }
+
+      div {
+        p {
+          margin-left: 10px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1200px) {
   }
 `;

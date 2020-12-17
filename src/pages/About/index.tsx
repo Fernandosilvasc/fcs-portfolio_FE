@@ -3,7 +3,7 @@ import React from 'react';
 
 import { Container, CardDescription, Header, Content } from './styles';
 
-import Sidebar from '../../components/Sidebar/index';
+import NavBar from '../../components/NavBar/index';
 import InfoCard from '../../components/InfoCard/index';
 import Footer from '../../components/Footer/index';
 import { ReactComponent as Illustration } from '../../assets/illustration.svg';
@@ -12,7 +12,7 @@ const About: React.FC = () => {
   return (
     <>
       <Container>
-        <Sidebar />
+        <NavBar />
         <InfoCard title="about" />
         <CardDescription>
           <Header>

@@ -68,9 +68,17 @@ export const Abstract = styled.div`
 `;
 
 export const Content = styled.div`
-  height: 18.75rem;
+  min-height: 234px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 1400px) {
+    min-height: 249px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    min-height: 210px;
+  }
 `;
 
 export const Avatar = styled.div`
@@ -278,6 +286,7 @@ export const Footer = styled.div`
       font-size: 1rem;
       padding: 0.625rem 0;
       text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+      margin: 0px;
     }
     svg {
       margin-left: 0.625rem;
@@ -307,7 +316,8 @@ export const Footer = styled.div`
   @media screen and (max-width: 1200px) {
     a {
       p {
-        font-size: 0.75rem;
+        font-size: 12px;
+        margin: 0px;
       }
       svg {
         margin-left: 0.3125rem;
