@@ -18,7 +18,9 @@ interface InfoCardProps {
   title: string;
 }
 
-const InfoCard: React.FC<InfoCardProps> = ({ title }: InfoCardProps) => {
+const InfoCardPortable: React.FC<InfoCardProps> = ({
+  title,
+}: InfoCardProps) => {
   return (
     <>
       <Container>
@@ -34,25 +36,6 @@ const InfoCard: React.FC<InfoCardProps> = ({ title }: InfoCardProps) => {
             <h1>Fernando Silva</h1>
             <p>FullStack Developer</p>
           </Description>
-
-          {/* {title !== 'home' && (
-            <SocialMediaLinks>
-              <a
-                href="https://github.com/Fernandosilvasc"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <GitHub />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/fernando-correa-da-silva/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <LikedIn />
-              </a>
-            </SocialMediaLinks>
-          )} */}
 
           <SocialMediaLinks title={title}>
             <a
@@ -99,4 +82,4 @@ const InfoCard: React.FC<InfoCardProps> = ({ title }: InfoCardProps) => {
   );
 };
 
-export default InfoCard;
+export default InfoCardPortable;

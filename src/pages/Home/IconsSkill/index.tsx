@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container, ListSkill, Skill } from './style';
 
-import Icons from '../../../data/icons';
+import Icons from './icons';
 
 const IconsSkill: React.FC = () => {
   return (

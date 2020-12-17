@@ -1,13 +1,13 @@
 import { uuid } from 'uuidv4';
 
-import NodeJsIcon from '../assets/nodejs_icon.svg';
-import ReactIcon from '../assets/react_icon.svg';
-import JSIcon from '../assets/js_icon.svg';
-import PHPIcon from '../assets/php_icon.svg';
-import HTMLIcon from '../assets/html_icon.svg';
-import CSSIcon from '../assets/css_icon.svg';
-import SassIcon from '../assets/sass_icon.svg';
-import FigmaIcon from '../assets/figma_icon.svg';
+import NodeJsIcon from '../../../assets/nodejs_icon.svg';
+import ReactIcon from '../../../assets/react_icon.svg';
+import JSIcon from '../../../assets/js_icon.svg';
+import PHPIcon from '../../../assets/php_icon.svg';
+import HTMLIcon from '../../../assets/html_icon.svg';
+import CSSIcon from '../../../assets/css_icon.svg';
+import SassIcon from '../../../assets/sass_icon.svg';
+import FigmaIcon from '../../../assets/figma_icon.svg';
 
 const Icons = [
   {

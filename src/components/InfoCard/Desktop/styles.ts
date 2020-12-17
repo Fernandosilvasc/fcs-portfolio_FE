@@ -68,16 +68,16 @@ export const Abstract = styled.div`
 `;
 
 export const Content = styled.div`
-  min-height: 234px;
+  min-height: 14.625rem;
   display: flex;
   flex-direction: column;
 
   @media screen and (max-width: 1400px) {
-    min-height: 249px;
+    min-height: 15.5625rem;
   }
 
   @media screen and (max-width: 1200px) {
-    min-height: 210px;
+    min-height: 13.125rem;
   }
 `;
 
@@ -97,7 +97,7 @@ export const Avatar = styled.div`
     background: #fe7f2d;
     border-radius: 50%;
     overflow: hidden;
-    index: 1000;
+    z-index: 1000;
 
     img {
       padding-left: 0.625rem;
@@ -316,7 +316,7 @@ export const Footer = styled.div`
   @media screen and (max-width: 1200px) {
     a {
       p {
-        font-size: 12px;
+        font-size: 0.75rem;
         margin: 0px;
       }
       svg {

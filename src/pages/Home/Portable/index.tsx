@@ -4,7 +4,7 @@ import { Container, BoxIntroduction, BoxSkills } from './styles';
 
 import NavBar from '../../../components/NavBar/Portable/index';
 import InfoCard from '../../../components/InfoCard/Portable/index';
-import TitleBar from '../../../components/TitleBar/index';
+import Header from '../../../components/Header/index';
 import Footer from '../../../components/Footer/index';
 import { ReactComponent as ComputerIcon } from '../../../assets/computer.svg';
 import { ReactComponent as MapIcon } from '../../../assets/map.svg';
@@ -19,7 +19,7 @@ const HomePortable: React.FC = () => {
       <Container>
         <NavBar />
         <InfoCard title="home" />
-        <TitleBar boldTitle="Hello" title="Everyone!" />
+        <Header boldTitle="Hello" title="Everyone!" />
 
         <BoxIntroduction>
           <h2>Introduction</h2>

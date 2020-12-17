@@ -168,6 +168,16 @@ export const BoxProject = styled.div`
   flex-direction: column;
   align-items: center;
   overflow-y: scroll;
+
+  .loader {
+    margin: auto;
+  }
+
+  @media screen and (max-width: 1400px) {
+  }
+
+  @media screen and (max-width: 1200px) {
+  }
 `;
 
 export const ProjectContainer = styled.div`

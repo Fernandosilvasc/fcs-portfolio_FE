@@ -6,6 +6,13 @@ export const Container = styled.div`
   justify-content: center;
   width: 100vw;
   height: 95vh;
+
+  @media screen and (max-width: 1400px) {
+    height: 95vh;
+  }
+
+  @media screen and (max-width: 1200px) {
+  }
 `;
 
 export const CardDescription = styled.div`

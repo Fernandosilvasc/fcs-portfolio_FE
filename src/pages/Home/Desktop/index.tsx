@@ -8,8 +8,8 @@ import {
   BoxSkills,
 } from './styles';
 
-import NavBar from '../../../components/NavBar/index';
-import InfoCard from '../../../components/InfoCard/index';
+import NavBar from '../../../components/NavBar/Desktop/index';
+import InfoCard from '../../../components/InfoCard/Desktop/index';
 import Footer from '../../../components/Footer/index';
 import { ReactComponent as ComputerIcon } from '../../../assets/computer.svg';
 import { ReactComponent as MapIcon } from '../../../assets/map.svg';
@@ -18,7 +18,7 @@ import { ReactComponent as LinkedInIcon } from '../../../assets/linkedIn.svg';
 
 import IconsSkill from '../IconsSkill/index';
 
-const Home: React.FC = () => {
+const HomeDesktop: React.FC = () => {
   return (
     <>
       <Container>
@@ -78,4 +78,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default HomeDesktop;

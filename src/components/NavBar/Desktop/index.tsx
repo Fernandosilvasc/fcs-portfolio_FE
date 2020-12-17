@@ -1,38 +1,49 @@
 import React from 'react';
-
 import { NavLink } from 'react-router-dom';
-import { Container, Nav } from './styles';
 
+// import { ReactComponent as NavButton } from '../../assets/navButton.svg';
 import { ReactComponent as HomeBtn } from '../../../assets/home-btn.svg';
 import { ReactComponent as AboutBtn } from '../../../assets/about-btn.svg';
 import { ReactComponent as WorkBtn } from '../../../assets/work-btn.svg';
 import { ReactComponent as ContactBtn } from '../../../assets/contact-btn.svg';
 import { ReactComponent as GithubBtn } from '../../../assets/github-btn.svg';
+import { NavContainer, Navbar } from './styles';
 
-const NavBarPortable: React.FC = () => {
+const NavBarDesktop: React.FC = () => {
   return (
     <>
-      <Container>
-        <Nav>
+      <NavContainer>
+        {/* <MainLink>
+          <Link to="/">
+            <NavButton />
+          </Link>
+        </MainLink> */}
+
+        <Navbar>
           <NavLink exact to="/">
             <HomeBtn />
+            <p>Home</p>
           </NavLink>
-          <NavLink to="/about">
+          <NavLink to="about">
             <AboutBtn />
+            <p>About</p>
           </NavLink>
           <NavLink to="/work">
             <WorkBtn />
+            <p>Work</p>
           </NavLink>
           <NavLink to="/contact">
             <ContactBtn />
+            <p>Contact</p>
           </NavLink>
           <NavLink to="/githubFeeds">
             <GithubBtn />
+            <p>Feeds</p>
           </NavLink>
-        </Nav>
-      </Container>
+        </Navbar>
+      </NavContainer>
     </>
   );
 };
 
-export default NavBarPortable;
+export default NavBarDesktop;

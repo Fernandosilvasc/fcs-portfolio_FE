@@ -3,7 +3,9 @@ import styled from 'styled-components';
 export const NavContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 3.75rem;
+  position: relative;
+  top: -100px;
+  margin: 60px;
   margin-left: 0;
   padding: 0;
 

@@ -1,15 +1,12 @@
 import React from 'react';
 import { Container, Title } from './styles';
 
-interface TitleBarProps {
+interface HeaderProps {
   boldTitle: string;
   title: string;
 }
 
-const TitleBar: React.FC<TitleBarProps> = ({
-  boldTitle,
-  title,
-}: TitleBarProps) => {
+const Header: React.FC<HeaderProps> = ({ boldTitle, title }: HeaderProps) => {
   return (
     <>
       <Container>
@@ -25,4 +22,4 @@ const TitleBar: React.FC<TitleBarProps> = ({
   );
 };
 
-export default TitleBar;
+export default Header;

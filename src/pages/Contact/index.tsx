@@ -1,56 +1,15 @@
 import React from 'react';
+import Media from 'react-media';
 
-import { Container, CardDescription, Header, Content } from './styles';
-
-import InfoCard from '../../components/InfoCard';
-import NavBar from '../../components/NavBar';
-import Footer from '../../components/Footer/index';
-
-import { ReactComponent as EmailIcon } from '../../assets/email.svg';
-import { ReactComponent as PhoneIcon } from '../../assets/phone.svg';
+import ContactDesktop from './Desktop/index';
+import ContactPortable from './Portable/index';
 
 const Contact: React.FC = () => {
   return (
     <>
-      <Container>
-        <NavBar />
-        <InfoCard title="contact" />
-        <CardDescription>
-          <Header>
-            <div />
-            <h2>
-              <span>Contact </span>
-              Me
-            </h2>
-          </Header>
-          <Content>
-            <h2>Interested in working together?</h2>
-            <div>
-              <p>
-                Feel free to get in touch with me. I am always open to
-                discussing new projects, creative ideas or opportunities to be
-                part of your team.
-              </p>
-              <div>
-                <EmailIcon />
-                <p>Fernando_silvasc@hotmail.com</p>
-              </div>
-              <div>
-                <PhoneIcon />
-                <p>+1 778-512-6641</p>
-              </div>
-            </div>
-            <a
-              href="mailto:fernando_silvasc@hotmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Get in Touch
-            </a>
-          </Content>
-        </CardDescription>
-      </Container>
-      <Footer />
+      <Media query={{ maxWidth: 1000 }}>
+        {matches => (matches ? <ContactPortable /> : <ContactDesktop />)}
+      </Media>
     </>
   );
 };
