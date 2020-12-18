@@ -54,6 +54,14 @@ export const BoxContent = styled.div`
   @media screen and (max-width: 1400px) {
     width: 750px;
     height: 720px;
+
+    & > a {
+      width: 60px;
+      right: -650px;
+      margin: 20px;
+      font-size: 10px;
+      padding: 10px 0;
+    }
   }
 
   @media screen and (max-width: 1200px) {
@@ -180,9 +188,7 @@ export const Header = styled.header`
 
     div {
       a {
-        padding: 10px;
         font-size: 8px;
-        margin-right: 10px;
       }
     }
   }

@@ -1,5 +1,4 @@
 import React from 'react';
-// import Media from 'react-media';
 
 import { Container, CardDescription, Header, Content } from './styles';
 
@@ -34,9 +33,6 @@ const AboutDesktop: React.FC = () => {
                 currently dealing with #NodeJS, #React, #ReactNative and other
                 tools that help in the development of this environment.
               </p>
-              {/* <Media query={{ maxWidth: 600 }}>
-                {matches => (matches ? <p>test 1</p> : <Illustration />)}
-              </Media> */}
             </div>
             <Illustration />
           </Content>

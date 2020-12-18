@@ -13,7 +13,7 @@ import {
   Project,
   Content,
   ImgProject,
-  Buttons,
+  Links,
 } from './styles';
 
 import NavBar from '../../../components/NavBar/Desktop/index';
@@ -118,7 +118,7 @@ const WorkDesktop: React.FC = () => {
                             ))}
                           </div>
                         </div>
-                        <Buttons>
+                        <Links>
                           <Link
                             key={project.id}
                             to={`/project/${project.name}`}
@@ -129,7 +129,7 @@ const WorkDesktop: React.FC = () => {
                             Details
                           </Link>
                           <a href="/">Launch</a>
-                        </Buttons>
+                        </Links>
                       </Content>
                     </Project>
                   </ProjectContainer>

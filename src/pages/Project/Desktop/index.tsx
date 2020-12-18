@@ -85,6 +85,7 @@ const ProjectDesktop: React.FC = () => {
                 </a>
               </div>
             </Header>
+
             <Content>
               <img src={currentProject.imgPath[1]} alt={currentProject.name} />
               <ProjectDescription>
@@ -98,6 +99,7 @@ const ProjectDesktop: React.FC = () => {
                     ))}
                   </div>
                 </Technologies>
+
                 <Tools>
                   <h2>Tools</h2>
                   <div>
@@ -108,6 +110,7 @@ const ProjectDesktop: React.FC = () => {
                     ))}
                   </div>
                 </Tools>
+
                 <Description>
                   <h2>Project</h2>
                   <div>

@@ -302,7 +302,7 @@ export const Content = styled.div`
   }
 `;
 
-export const Buttons = styled.div`
+export const Links = styled.div`
   display: flex;
   width: 100%;
   margin-bottom: 1.25rem;
