@@ -29,6 +29,7 @@ interface Repository {
   stack: string[];
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const GitHubFeedsDesktop: React.FC = (): any => {
   const [repositories, setRepositories] = useState<Repository[]>([]);
   const [isLoading, setLoading] = useState(true);
