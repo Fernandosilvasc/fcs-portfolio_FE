@@ -103,44 +103,42 @@ const WorkDesktop: React.FC = () => {
 
           <BoxProject>
             {!isLoading ? (
-              <>
+              <ProjectContainer>
                 {projects.map(project => (
-                  <ProjectContainer key={project.id}>
-                    <Project>
-                      <ImgProject src={project.imgPath[0]} alt={project.name} />
+                  <Project key={project.id}>
+                    <ImgProject src={project.imgPath[0]} alt={project.name} />
 
-                      <Content>
+                    <Content>
+                      <div>
+                        <h2>{project.name}</h2>
                         <div>
-                          <h2>{project.name}</h2>
-                          <div>
-                            {project.techs.map(techs => (
-                              <h3 key={techs}>{techs}</h3>
-                            ))}
-                          </div>
+                          {project.techs.map(techs => (
+                            <h3 key={techs}>{techs}</h3>
+                          ))}
                         </div>
-                        <Links>
-                          <Link
-                            key={project.id}
-                            to={`/project/${project.name}`}
-                            onClick={() => {
-                              handleSetProject(project.id);
-                            }}
-                          >
-                            Details
-                          </Link>
-                          <a
-                            href={project.webLink}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            Launch
-                          </a>
-                        </Links>
-                      </Content>
-                    </Project>
-                  </ProjectContainer>
+                      </div>
+                      <Links>
+                        <Link
+                          key={project.id}
+                          to={`/project/${project.name}`}
+                          onClick={() => {
+                            handleSetProject(project.id);
+                          }}
+                        >
+                          Details
+                        </Link>
+                        <a
+                          href={project.webLink}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Launch
+                        </a>
+                      </Links>
+                    </Content>
+                  </Project>
                 ))}
-              </>
+              </ProjectContainer>
             ) : (
               <Loader
                 type="Oval"

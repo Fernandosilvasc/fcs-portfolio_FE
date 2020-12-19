@@ -168,26 +168,40 @@ export const BoxProject = styled.div`
   flex: 1;
   flex-direction: column;
   align-items: center;
-  overflow-y: scroll;
+  justify-content: center;
 
   .loader {
     margin: auto;
   }
 
   @media screen and (max-width: 1400px) {
+    .loader {
+      svg {
+        width: 5rem;
+      }
+    }
   }
 
   @media screen and (max-width: 1200px) {
+    .loader {
+      svg {
+        width: 4.375rem;
+      }
+    }
   }
 `;
 
 export const ProjectContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-top: 3.125rem;
+  overflow-y: scroll;
+  width: 100%;
+  height: 38.375rem;
 
-  &:last-child {
-    margin-bottom: 3.125rem;
+  @media screen and (max-width: 1400px) {
+    height: 33.6875rem;
+  }
+
+  @media screen and (max-width: 1200px) {
+    height: 31.1875rem;
   }
 `;
 
@@ -198,13 +212,11 @@ export const Project = styled.div`
   background: #1f1f23;
   box-shadow: 0.125rem 0.5rem 0.625rem rgba(0, 0, 0, 0.25);
   border-radius: 0.625rem;
-  margin-left: 1.25rem;
-  transition: left 4s;
+  margin: 3.125rem auto;
 
-  /* &:hover {
-    position: relative;
-    left: -0.9375rem;
-  } */
+  &:last-child {
+    margin-bottom: 2.1875rem;
+  }
 
   @media screen and (max-width: 1400px) {
     width: 31.25rem;
@@ -308,8 +320,6 @@ export const Links = styled.div`
   width: 100%;
   margin-bottom: 1.25rem;
   justify-content: flex-end;
-  /* position: relative;
-  top: 6.875rem; */
 
   a {
     display: flex;
@@ -325,7 +335,8 @@ export const Links = styled.div`
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
     text-decoration: none;
     color: #efefd0;
-    transition: all 0.4s;
+    transition: color 0.4s;
+    transition: background 0.4s;
 
     &:hover {
       background: ${shade(0.2, 'rgba(254, 127, 45, 0.9)')};
@@ -337,6 +348,7 @@ export const Links = styled.div`
     background: none;
     border: 1px solid rgba(254, 127, 45, 0.9);
     border-radius: 0.3125rem;
+    transition: color 0.4s;
 
     &:hover {
       color: ${shade(0.2, '#efefd0')};
