@@ -13,7 +13,8 @@ const ProjectContext = createContext<ProjectContextData>(
   {} as ProjectContextData,
 );
 
-export const ProjectProvider: React.FC = ({ children }: any) => {
+// eslint-disable-next-line react/prop-types
+export const ProjectProvider: React.FC = ({ children }) => {
   const [projectID, setProjectID] = useState('');
 
   return (
