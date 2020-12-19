@@ -42,7 +42,7 @@ const HomeDesktop: React.FC = () => {
                 </li>
                 <li>
                   <MapIcon />
-                  <p>&#8212; Lives in Surrey, CA</p>
+                  <p>&#8212; Lives in Vancouver, CA</p>
                 </li>
                 <li>
                   <div>

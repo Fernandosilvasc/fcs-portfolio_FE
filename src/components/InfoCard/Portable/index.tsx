@@ -9,7 +9,7 @@ import {
   AlternativeLink,
 } from './styles';
 
-import ImgAvatar from '../../../assets/imgAvatar.png';
+import ImgAvatar from '../../../assets/imgAvatar.2.png';
 import { ReactComponent as GitHub } from '../../../assets/github2.svg';
 import { ReactComponent as LikedIn } from '../../../assets/linkedIn2.svg';
 import { ReactComponent as Clip } from '../../../assets/clip.svg';

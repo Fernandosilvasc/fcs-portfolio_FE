@@ -12,7 +12,7 @@ import {
 } from './styles';
 
 import ImgBackground from '../../../assets/infoBackground.png';
-import ImgAvatar from '../../../assets/imgAvatar.png';
+import ImgAvatar from '../../../assets/imgAvatar.2.png';
 import { ReactComponent as GitHub } from '../../../assets/github.svg';
 import { ReactComponent as LikedIn } from '../../../assets/linkedIn.svg';
 import { ReactComponent as Clip } from '../../../assets/clip.svg';

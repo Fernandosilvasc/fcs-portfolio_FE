@@ -33,7 +33,7 @@ const ContactDesktop: React.FC = () => {
               </p>
               <div>
                 <EmailIcon />
-                <p>Fernando_silvasc@hotmail.com</p>
+                <p>fernando_silvasc@hotmail.com</p>
               </div>
               <div>
                 <PhoneIcon />
