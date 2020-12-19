@@ -64,7 +64,7 @@ export const FilterButton = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px; // change later
+  margin: 40px;
 `;
 interface ButtonProps {
   active: boolean;
@@ -120,10 +120,6 @@ export const BoxProject = styled.div`
   align-items: center;
   overflow-y: scroll;
 
-  .loader {
-    margin: auto;
-  }
-
   @media screen and (max-width: 768px) {
     height: 450px;
   }
@@ -150,6 +146,10 @@ export const ProjectContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 585px;
+
+  .loader {
+    margin: auto;
+  }
 
   @media screen and (max-width: 768px) {
     width: 485px;
