@@ -4,6 +4,10 @@ export const Container = styled.div`
   display: flex;
   justify-content: flex-end;
   width: 100%;
+
+  @media screen and (max-width: 380px) {
+    justify-content: center;
+  }
 `;
 
 export const Nav = styled.div`
@@ -71,18 +75,18 @@ export const Nav = styled.div`
   }
 
   @media screen and (max-width: 380px) {
-    margin: 40px 40px 0 0;
+    margin: 30px 0 0 0;
 
-    a {
+    /* a {
       svg {
         width: 27px;
         height: 23px;
         margin: 6px;
       }
-    }
+    } */
   }
 
-  @media screen and (max-width: 350px) {
+  /* @media screen and (max-width: 350px) {
     margin: 30px 30px 0 0;
-  }
+  } */
 `;

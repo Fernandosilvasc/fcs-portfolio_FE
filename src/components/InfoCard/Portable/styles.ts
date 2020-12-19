@@ -249,7 +249,7 @@ interface SocialMediaLinksProps {
 }
 
 export const SocialMediaLinks = styled.div<SocialMediaLinksProps>`
-  max-height: 30px;
+  max-height: 34px;
   margin-left: 40px;
 
   ${(props: { title: string }) =>
@@ -260,7 +260,9 @@ export const SocialMediaLinks = styled.div<SocialMediaLinksProps>`
 
   a {
     svg {
-      margin-left: 8px;
+      width: 34px;
+      height: 34px;
+      margin-left: 10px;
       background: #efefd0;
       border-radius: 2px 2px 0 0;
       transition: background 0.4s;
@@ -274,49 +276,50 @@ export const SocialMediaLinks = styled.div<SocialMediaLinksProps>`
   }
 
   @media screen and (max-width: 768px) {
-    max-height: 25px;
+    max-height: 32px;
     margin-left: 40px;
 
     a {
       svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    max-height: 28px;
+    margin-left: 30px;
+
+    a {
+      svg {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    max-height: 25px;
+    margin-left: 20px;
+
+    a {
+      svg {
+        margin-left: 8px;
         width: 25px;
         height: 25px;
       }
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 380px) {
     max-height: 23px;
-    margin-left: 30px;
+    margin-left: 20px;
 
     a {
       svg {
         width: 23px;
         height: 23px;
-      }
-    }
-  }
-
-  @media screen and (max-width: 480px) {
-    max-height: 20px;
-    margin-left: 20px;
-
-    a {
-      svg {
-        width: 20px;
-        height: 20px;
-      }
-    }
-  }
-
-  @media screen and (max-width: 380px) {
-    max-height: 19px;
-    margin-left: 20px;
-
-    a {
-      svg {
-        width: 19px;
-        height: 19px;
       }
     }
   }
@@ -430,10 +433,10 @@ export const AlternativeLink = styled.div`
   }
 
   @media screen and (max-width: 380px) {
-    width: 60px;
+    width: 70px;
     height: 27px;
     top: -25px;
-    left: 115px;
+    left: 110px;
 
     a {
       p {

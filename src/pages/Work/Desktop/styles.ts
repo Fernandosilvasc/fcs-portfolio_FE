@@ -201,10 +201,10 @@ export const Project = styled.div`
   margin-left: 1.25rem;
   transition: left 4s;
 
-  &:hover {
+  /* &:hover {
     position: relative;
     left: -0.9375rem;
-  }
+  } */
 
   @media screen and (max-width: 1400px) {
     width: 31.25rem;

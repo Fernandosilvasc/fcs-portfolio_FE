@@ -30,7 +30,7 @@ const AboutDesktop: React.FC = () => {
               </p>
               <p>
                 Today I am redirecting my focus to Web development, where I am
-                currently dealing with #NodeJS, #React, #ReactNative and other
+                currently working with #NodeJS, #React, #ReactNative and other
                 tools that help in the development of this environment.
               </p>
             </div>

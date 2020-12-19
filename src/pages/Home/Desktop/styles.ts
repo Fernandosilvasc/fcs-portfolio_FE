@@ -149,14 +149,14 @@ export const BoxIntroduction = styled.div`
         font-size: 0.75rem;
         color: #fe7f2d;
         text-decoration: none;
-        transition: all 0.4s;
+        transition: all 0.2s;
       }
 
       svg {
         margin-right: 0.625rem;
         width: 25px;
         height: 20px;
-        transition: all 0.4s;
+        transition: all 0.2s;
       }
 
       div {

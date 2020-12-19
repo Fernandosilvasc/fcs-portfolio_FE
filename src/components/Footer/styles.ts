@@ -60,7 +60,7 @@ export const Container = styled.footer`
   }
 
   @media screen and (max-width: 380px) {
-    height: 3.5vh;
+    /* height: 3.5vh; */
 
     svg {
       width: 0.9375rem;
