@@ -45,24 +45,28 @@ const HomeDesktop: React.FC = () => {
                   <p>&#8212; Lives in Surrey, CA</p>
                 </li>
                 <li>
-                  <GitHubIcon />
-                  <a
-                    href="https://github.com/Fernandosilvasc"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    &#8212; GitHub link
-                  </a>
+                  <div>
+                    <GitHubIcon />
+                    <a
+                      href="https://github.com/Fernandosilvasc"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      &#8212; GitHub
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <LinkedInIcon />
-                  <a
-                    href="https://www.linkedin.com/in/fernando-correa-da-silva/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    &#8212; LinkedIn link
-                  </a>
+                  <div>
+                    <LinkedInIcon />
+                    <a
+                      href="https://www.linkedin.com/in/fernando-correa-da-silva/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      &#8212; LinkedIn
+                    </a>
+                  </div>
                 </li>
               </ul>
             </BoxIntroduction>

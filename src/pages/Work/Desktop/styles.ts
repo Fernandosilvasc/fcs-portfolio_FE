@@ -122,7 +122,7 @@ interface ButtonProps {
   active: boolean;
 }
 
-export const Navbar = styled.div`
+export const FilterButton = styled.div`
   display: flex;
   margin-right: 1.25rem;
 `;
@@ -140,6 +140,7 @@ export const Button = styled.button<ButtonProps>`
   padding: 0.3125rem 0.625rem;
   border: none;
   margin: 0 0.3125rem;
+  transition: background 0.4s;
 
   &:hover {
     background: rgba(254, 127, 45, 0.9);
@@ -324,6 +325,7 @@ export const Links = styled.div`
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
     text-decoration: none;
     color: #efefd0;
+    transition: all 0.4s;
 
     &:hover {
       background: ${shade(0.2, 'rgba(254, 127, 45, 0.9)')};

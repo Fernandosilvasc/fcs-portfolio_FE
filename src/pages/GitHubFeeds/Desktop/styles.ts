@@ -77,7 +77,7 @@ export const Header = styled.header`
       color: #efefd0;
       position: relative;
       left: -1.125rem;
-      text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+      text-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
 
       span {
         color: #fe7f2d;
@@ -210,10 +210,14 @@ export const Project = styled.div`
 
     a {
       svg {
-        width: 0.75rem;
-        height: 0.75rem;
+        width: 12px;
+        height: 12px;
+        transition: all 0.2s;
 
         &:hover {
+          width: 15px;
+          height: 15px;
+
           path {
             fill: #ff9800;
           }

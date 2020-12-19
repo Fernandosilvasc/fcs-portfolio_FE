@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Loader from 'react-loader-spinner';
 
+import api from '../../../services/api';
+
 import {
   Container,
   CardDescription,
@@ -16,8 +18,6 @@ import { ReactComponent as ArrowLink } from '../../../assets/arrowLink.svg';
 import NavBar from '../../../components/NavBar/Desktop/index';
 import InforCard from '../../../components/InfoCard/Desktop/index';
 import Footer from '../../../components/Footer/index';
-
-import api from '../../../services/api';
 
 interface Repository {
   id: string;

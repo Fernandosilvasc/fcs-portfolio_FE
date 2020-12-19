@@ -59,7 +59,7 @@ export const Header = styled.header`
     color: #efefd0;
     position: relative;
     left: -1.125rem;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
 
     span {
       color: #fe7f2d;
@@ -109,8 +109,8 @@ export const Content = styled.div`
       text-align: justify;
       font-family: Poppins;
       font-weight: lighter;
-      font-size: 16px;
-      line-height: 25px;
+      font-size: 1rem;
+      line-height: 1.5625rem;
       color: rgba(245, 245, 245, 0.55);
     }
   }

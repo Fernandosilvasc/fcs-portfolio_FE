@@ -448,13 +448,14 @@ export const AlternativeLink = styled.div`
   }
 
   @media screen and (max-width: 350px) {
-    width: 60px;
+    width: 65px;
     height: 27px;
     top: -25px;
-    left: 105px;
+    left: 102px;
 
     a {
       p {
+        /* padding: 0 5px; */
         font-size: 8px;
       }
 

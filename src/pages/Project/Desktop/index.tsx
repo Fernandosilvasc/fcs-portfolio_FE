@@ -70,14 +70,14 @@ const ProjectDesktop: React.FC = () => {
               </div>
               <div>
                 <a
-                  href={currentProject.github}
+                  href={currentProject.webLink}
                   target="_blank"
                   rel="noreferrer"
                 >
                   Website
                 </a>
                 <a
-                  href={currentProject.webLink}
+                  href={currentProject.github}
                   target="_blank"
                   rel="noreferrer"
                 >

@@ -101,6 +101,7 @@ export const Navbar = styled.div`
       width: 3.125rem;
       height: 1.6875rem;
       path {
+        transition: fill 0.4s;
         fill: #efefd0;
       }
     }
@@ -110,11 +111,11 @@ export const Navbar = styled.div`
       font-weight: bold;
       font-size: 0.6875rem;
       text-transform: uppercase;
-      /* line-height: 0.6875rem; */
       color: #efefd0;
       text-align: center;
       margin: 0;
       padding-top: 0.3125rem;
+      transition: color 0.4s;
     }
 
     &:hover {

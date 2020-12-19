@@ -152,7 +152,7 @@ export const Content = styled.div`
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
     text-decoration: none;
     color: #efefd0;
-    transition: background 0.4s;
+    transition: all 0.4s;
 
     &:hover {
       background: ${shade(0.2, 'rgba(254, 127, 45, 0.9)')};

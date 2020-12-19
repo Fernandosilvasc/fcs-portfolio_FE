@@ -149,12 +149,30 @@ export const BoxIntroduction = styled.div`
         font-size: 0.75rem;
         color: #fe7f2d;
         text-decoration: none;
+        transition: all 0.4s;
       }
 
       svg {
         margin-right: 0.625rem;
-        width: 1.5625rem;
-        height: 1.25rem;
+        width: 25px;
+        height: 20px;
+        transition: all 0.4s;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          svg {
+            width: 27px;
+            height: 22px;
+          }
+
+          a {
+            font-size: 14px;
+          }
+        }
       }
     }
   }
@@ -201,8 +219,20 @@ export const BoxIntroduction = styled.div`
 
         svg {
           margin-right: 0.625rem;
-          width: 1.375rem;
-          height: 1rem;
+          width: 22px;
+          height: 16px;
+        }
+        div {
+          &:hover {
+            svg {
+              width: 24px;
+              height: 18px;
+            }
+
+            a {
+              font-size: 14px;
+            }
+          }
         }
       }
     }

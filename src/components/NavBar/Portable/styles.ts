@@ -10,7 +10,7 @@ export const Nav = styled.div`
   display: flex;
   align-items: center;
   background: #31313a;
-  border: 2px solid #ff9800;
+  border: 2px solid #fe7f2d;
   border-radius: 5px;
   margin: 40px 40px 0 0;
 
@@ -23,6 +23,9 @@ export const Nav = styled.div`
       width: 50px;
       height: 45px;
       margin: 15px 10px;
+      path {
+        transition: all 0.4s;
+      }
     }
 
     &:hover {

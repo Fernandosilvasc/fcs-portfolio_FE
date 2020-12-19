@@ -6,7 +6,7 @@ import {
   Container,
   CardDescription,
   Header,
-  Navbar,
+  FilterButton,
   Button,
   BoxProject,
   ProjectContainer,
@@ -82,7 +82,7 @@ const WorkDesktop: React.FC = () => {
               </h2>
             </div>
 
-            <Navbar>
+            <FilterButton>
               {buttons.map(button => (
                 <Button
                   type="button"
@@ -98,7 +98,7 @@ const WorkDesktop: React.FC = () => {
                   {button.title}
                 </Button>
               ))}
-            </Navbar>
+            </FilterButton>
           </Header>
 
           <BoxProject>
@@ -128,7 +128,13 @@ const WorkDesktop: React.FC = () => {
                           >
                             Details
                           </Link>
-                          <a href="/">Launch</a>
+                          <a
+                            href={project.webLink}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Launch
+                          </a>
                         </Links>
                       </Content>
                     </Project>

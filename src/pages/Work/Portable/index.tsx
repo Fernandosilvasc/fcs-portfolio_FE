@@ -120,7 +120,13 @@ const WorkPortable: React.FC = () => {
                           >
                             Details
                           </Link>
-                          <a href="/">Launch</a>
+                          <a
+                            href={project.webLink}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Launch
+                          </a>
                         </Links>
                       </Content>
                     </Project>

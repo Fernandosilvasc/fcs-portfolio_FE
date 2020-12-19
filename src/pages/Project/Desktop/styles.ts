@@ -65,8 +65,8 @@ export const BoxContent = styled.div`
   }
 
   @media screen and (max-width: 1200px) {
-    width: 750px; // change later
-    height: 720px; // change later
+    width: 750px;
+    height: 720px;
   }
 `;
 
@@ -130,6 +130,7 @@ export const Header = styled.header`
       text-decoration: none;
       color: #efefd0;
       margin-right: 0.625rem;
+      transition: all 0.4s;
 
       &:hover {
         background: ${shade(0.2, 'rgba(254, 127, 45, 0.9)')};
@@ -271,7 +272,7 @@ export const Technologies = styled.div`
   }
 
   @media screen and (max-width: 1400px) {
-    margin-top: 50px;
+    margin-top: 40px;
 
     h2 {
       width: 115px;
@@ -292,6 +293,7 @@ export const Technologies = styled.div`
       }
     }
   }
+
   @media screen and (max-width: 1200px) {
   }
 `;
@@ -441,6 +443,40 @@ export const Description = styled.div`
       }
     }
   }
+
   @media screen and (max-width: 1200px) {
+    margin: 40px 0;
+
+    h2 {
+      width: 115px;
+      font-size: 14px;
+      margin: 20px 20px 0 0;
+    }
+
+    div {
+      width: 415px;
+
+      h3 {
+        margin: 17px 0rem;
+        font-size: 17px;
+      }
+
+      h4 {
+        font-size: 15px;
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 28px;
+        margin: 0rem;
+      }
+
+      div {
+        p {
+          margin-left: 10px;
+          font-size: 13px;
+        }
+      }
+    }
   }
 `;

@@ -211,6 +211,7 @@ export const Links = styled.div`
       width: 2.8125rem;
       height: 1.6875rem;
       path {
+        transition: 0.4s;
         fill: #efefd0;
       }
     }
@@ -270,9 +271,12 @@ export const Footer = styled.div`
     color: #efefd0;
     cursor: pointer;
     text-decoration: none;
+    transition: all 0.4s;
 
     &:hover {
-      color: #fe7f2d;
+      p {
+        color: #fe7f2d;
+      }
       svg {
         path {
           fill: #fe7f2d;
@@ -287,15 +291,14 @@ export const Footer = styled.div`
       padding: 0.625rem 0;
       text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
       margin: 0px;
+      transition: color 0.4s;
     }
     svg {
       margin-left: 0.625rem;
       text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 
-      &:hover {
-        path {
-          fill: #fe7f2d;
-        }
+      path {
+        transition: fill 0.4s;
       }
     }
   }

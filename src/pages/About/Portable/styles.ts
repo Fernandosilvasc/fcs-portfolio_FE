@@ -12,35 +12,34 @@ export const CardDescription = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 590px;
+  width: 36.875rem;
   background: #31313a;
   border: 2px solid #efefd0;
-  border-radius: 5px;
-  margin: 40px 0 120px 0;
+  border-radius: 0.3125rem;
+  margin: 2.5rem 0 7.5rem 0;
 
   @media screen and (max-width: 768px) {
-    width: 490px;
-    margin: 40px 0 120px 0;
+    width: 30.625rem;
+    margin: 2.5rem 0 7.5rem 0;
   }
 
   @media screen and (max-width: 600px) {
-    width: 390px;
-    margin: 40px 0 80px 0;
+    width: 24.375rem;
+    margin: 2.5rem 0 5rem 0;
   }
 
   @media screen and (max-width: 480px) {
-    width: 330px;
-    margin: 40px 0 80px 0;
+    width: 20.625rem;
   }
 
   @media screen and (max-width: 380px) {
-    width: 290px;
-    margin: 30px 0 80px 0;
+    width: 18.125rem;
+    margin: 1.875rem 0 5rem 0;
   }
 
   @media screen and (max-width: 350px) {
-    width: 270px;
-    margin: 40px 0 80px 0;
+    width: 16.875rem;
+    margin: 2.5rem 0 5rem 0;
   }
 `;
 
@@ -52,100 +51,96 @@ export const Content = styled.div`
   font-family: Poppins;
 
   div {
-    width: 370px;
-    margin: 40px auto;
+    width: 23.125rem;
+    margin: 2.5rem auto;
 
     p {
       font-weight: normal;
-      font-size: 20px;
-      line-height: 36px;
+      font-size: 1.25rem;
+      line-height: 2.25rem;
       color: rgba(245, 245, 245, 0.55);
     }
   }
 
   svg {
-    width: 290px;
-    height: 285px;
-    margin-bottom: 80px;
+    width: 18.125rem;
+    height: 17.8125rem;
+    margin-bottom: 5rem;
   }
 
   @media screen and (max-width: 768px) {
     div {
-      width: 350px;
-      margin: 40px auto;
+      width: 21.875rem;
 
       p {
-        font-size: 18px;
-        line-height: 34px;
+        font-size: 1.125rem;
+        line-height: 2.125rem;
       }
     }
 
     svg {
-      width: 275px;
-      height: 270px;
-      margin-bottom: 80px;
+      width: 17.1875rem;
+      height: 16.875rem;
     }
   }
 
   @media screen and (max-width: 600px) {
     div {
-      width: 280px;
-      margin: 40px auto;
+      width: 17.5rem;
 
       p {
-        font-size: 16px;
-        line-height: 32px;
+        font-size: 1rem;
+        line-height: 2rem;
       }
     }
 
     svg {
-      width: 270px;
-      height: 265px;
-      margin-bottom: 80px;
+      width: 16.875rem;
+      height: 16.5625rem;
     }
   }
 
   @media screen and (max-width: 480px) {
     div {
-      width: 230px;
-      margin: 30px auto;
+      width: 14.375rem;
+      margin: 1.875rem auto;
 
       p {
-        font-size: 14px;
-        line-height: 28px;
+        font-size: 0.875rem;
+        line-height: 1.75rem;
       }
     }
 
     svg {
-      width: 220px;
-      height: 215px;
-      margin-bottom: 60px;
+      width: 13.75rem;
+      height: 13.4375rem;
+      margin-bottom: 3.75rem;
     }
   }
 
   @media screen and (max-width: 380px) {
     div {
-      width: 190px;
-      margin: 30px auto 20px auto;
+      width: 11.875rem;
+      margin: 1.875rem auto 1.25rem auto;
 
       p {
-        font-size: 12px;
-        line-height: 28px;
+        font-size: 0.75rem;
+        line-height: 1.75rem;
       }
     }
 
     svg {
-      width: 210px;
-      height: 205px;
-      margin-bottom: 40px;
+      width: 13.125rem;
+      height: 12.8125rem;
+      margin-bottom: 2.5rem;
     }
   }
 
   @media screen and (max-width: 350px) {
     svg {
-      width: 190px;
-      height: 185px;
-      margin-bottom: 40px;
+      width: 11.875rem;
+      height: 11.5625rem;
+      margin-bottom: 2.5rem;
     }
   }
 `;
