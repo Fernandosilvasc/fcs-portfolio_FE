@@ -24,7 +24,7 @@ const NavBarDesktop: React.FC = () => {
             <HomeBtn />
             <p>Home</p>
           </NavLink>
-          <NavLink to="about">
+          <NavLink to="/about">
             <AboutBtn />
             <p>About</p>
           </NavLink>
