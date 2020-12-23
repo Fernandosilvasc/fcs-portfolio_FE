@@ -36,7 +36,7 @@ const GitHubFeedsDesktop: React.FC = (): any => {
 
   const loadData = async () => {
     const { data } = await api.get<Repository[]>(
-      '/users/Fernandosilvasc/repos?per_page=4',
+      '/users/Fernandosilvasc/repos?type=public&sort=pushed&direction=desc&per_page=4',
     );
 
     const repos = await Promise.all(
