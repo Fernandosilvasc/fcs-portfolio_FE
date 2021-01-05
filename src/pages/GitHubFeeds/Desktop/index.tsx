@@ -78,8 +78,6 @@ const GitHubFeedsDesktop: React.FC = (): any => {
     loadData();
   }, []);
 
-  console.log(repositories);
-
   return (
     <>
       <Container>
