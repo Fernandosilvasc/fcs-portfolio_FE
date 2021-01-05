@@ -295,6 +295,8 @@ export const Description = styled.div`
   }
 
   div {
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0 auto;
     p {
       font-weight: 500;
