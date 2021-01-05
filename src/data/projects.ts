@@ -71,7 +71,7 @@ const Projects = [
     techs: ['HTML', 'CSS', 'JS'],
     tools: ['Sass', 'Figma'],
     type: ['FrontEnd'],
-    webLink: 'http://www.procaliberlacrosse.com/second/',
+    webLink: 'https://fernandosilvasc.github.io/lacrosseproject/',
     github: '/',
     about: [''],
     features: [''],
