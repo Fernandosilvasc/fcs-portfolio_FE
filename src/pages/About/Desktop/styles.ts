@@ -102,7 +102,7 @@ export const Content = styled.div`
   flex: 1;
 
   div {
-    margin: 1.25rem auto;
+    /* margin: 10px auto 0 auto; */
     width: 32.5rem;
 
     p {
@@ -122,7 +122,7 @@ export const Content = styled.div`
 
   @media screen and (max-width: 1400px) {
     div {
-      margin: 1.25rem auto;
+      /* margin: 1.25rem auto; */
       width: 28.125rem;
       p {
         font-size: 0.875rem;
@@ -138,7 +138,7 @@ export const Content = styled.div`
 
   @media screen and (max-width: 1200px) {
     div {
-      margin: 1.25rem auto;
+      /* margin: 1.25rem auto; */
       width: 25rem;
       p {
         font-size: 0.875rem;

@@ -19,15 +19,20 @@ const AboutPortable: React.FC = () => {
           <Content>
             <div>
               <p>
-                Over 15 years I built a career focused on productivity, quality,
-                and intercommunication, which provided me great experiences and
-                immense learning.
+                Full-stack web developer with a background in quality assurance
+                and production engineering. My background has provided me with
+                high-quality coding skills and a natural understanding of
+                software development cycles.
               </p>
               <p>
-                Today I am redirecting my focus to Web development, where I am
-                currently studying and develop applications with #NodeJS,
-                #React, #ReactNative and other tools that help in the
-                development of this environment.
+                My thorough enjoyment of working on backend technologies has
+                given me the ability to quickly read and understand existing
+                code and systems.
+              </p>
+              <p>
+                I’d love to leverage my knowledge gained thus far and continue
+                to rapidly grow in tech and work collaboratively in a team to
+                deliver excellent results.
               </p>
             </div>
             <Illustration />
