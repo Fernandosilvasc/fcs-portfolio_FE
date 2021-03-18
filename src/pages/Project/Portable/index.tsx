@@ -30,7 +30,10 @@ interface ProjectState {
   github: string;
   about: string[];
   features: string[];
-  learned: string[];
+  learned: {
+    description: string;
+    bulletPoints?: string[];
+  };
   challenges: string[];
 }
 
@@ -113,7 +116,7 @@ const ProjectPortable: React.FC = () => {
                       ))}
                     </div>
                     <h3>What I learned</h3>
-                    <p>{currentProject.learned}</p>
+                    {/* <p>{currentProject.learned}</p> */}
                     <h3>Challenges faced</h3>
                     <p>{currentProject.challenges}</p>
                   </div>

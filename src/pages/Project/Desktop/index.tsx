@@ -10,6 +10,7 @@ import {
   Technologies,
   Tools,
   Description,
+  Context,
 } from './styles';
 
 import NavBar from '../../../components/NavBar/Desktop/index';
@@ -29,7 +30,10 @@ interface ProjectState {
   github: string;
   about: string[];
   features: string[];
-  learned: string[];
+  learned: {
+    description: string;
+    bulletPoints?: string[];
+  };
   challenges: string[];
 }
 
@@ -115,17 +119,31 @@ const ProjectDesktop: React.FC = () => {
                   <h2>Project</h2>
                   <div>
                     <h3>About this project</h3>
-                    <p>{currentProject.about}</p>
-                    <div>
+                    <Context>
+                      <p>{currentProject.about}</p>
                       <h4>Features</h4>
-                      {currentProject.features.map(feature => (
-                        <p>{feature}</p>
-                      ))}
-                    </div>
+                      <ul>
+                        {currentProject.features.map(feature => (
+                          <li>{feature}</li>
+                        ))}
+                      </ul>
+                    </Context>
                     <h3>What I learned</h3>
-                    <p>{currentProject.learned}</p>
+                    <Context>
+                      <p>{currentProject.learned.description}</p>
+                      <ul>
+                        {currentProject.learned.bulletPoints &&
+                          currentProject.learned.bulletPoints.map(
+                            bulletPoint => <li>{bulletPoint}</li>,
+                          )}
+                      </ul>
+                    </Context>
                     <h3>Challenges faced</h3>
-                    <p>{currentProject.challenges}</p>
+                    <Context>
+                      {currentProject.challenges.map(challenge => (
+                        <p>{challenge}</p>
+                      ))}
+                    </Context>
                   </div>
                 </Description>
               </ProjectDescription>

@@ -392,20 +392,20 @@ export const Description = styled.div`
       color: #fe7f2d;
     }
 
-    p {
+    /* p {
       font-weight: 300;
       font-size: 1rem;
       line-height: 1.875rem;
       color: rgba(245, 245, 245, 0.55);
       margin: 0px;
-    }
+    } */
 
-    div {
+    /* div {
       p {
         margin-left: 0.625rem;
         font-size: 0.8125rem;
       }
-    }
+    } */
   }
 
   @media screen and (max-width: 1400px) {
@@ -429,18 +429,18 @@ export const Description = styled.div`
         font-size: 16px;
       }
 
-      p {
+      /* p {
         font-size: 16px;
         line-height: 30px;
         margin: 0rem;
-      }
+      } */
 
-      div {
+      /* div {
         p {
           margin-left: 10px;
           font-size: 13px;
         }
-      }
+      } */
     }
   }
 
@@ -465,18 +465,41 @@ export const Description = styled.div`
         font-size: 15px;
       }
 
-      p {
+      /* p {
         font-size: 15px;
         line-height: 28px;
         margin: 0rem;
-      }
+      } */
 
-      div {
+      /* div {
         p {
           margin-left: 10px;
           font-size: 13px;
         }
-      }
+      } */
+    }
+  }
+`;
+
+export const Context = styled.div`
+  display: flex;
+  flex-direction: column;
+  color: rgba(245, 245, 245, 0.55);
+  font-weight: 300;
+
+  p {
+    font-size: 1rem;
+    line-height: 1.875rem;
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    padding-left: 20px;
+    li {
+      font-size: 1rem;
+      line-height: 1.875rem;
+      margin: 0px;
     }
   }
 `;
