@@ -29,7 +29,7 @@ interface ProjectState {
   webLink: string;
   github: string;
   about: string[];
-  features: string[];
+  features?: string[];
   learned: {
     description: string;
     bulletPoints?: string[];
@@ -110,10 +110,11 @@ const ProjectPortable: React.FC = () => {
                     <h3>About this project</h3>
                     <p>{currentProject.about}</p>
                     <div>
-                      <h4>Features</h4>
-                      {currentProject.features.map(feature => (
-                        <p>{feature}</p>
-                      ))}
+                      {currentProject.features && <h4>Features</h4>}
+                      {currentProject.features &&
+                        currentProject.features.map(feature => (
+                          <p>{feature}</p>
+                        ))}
                     </div>
                     <h3>What I learned</h3>
                     {/* <p>{currentProject.learned}</p> */}
