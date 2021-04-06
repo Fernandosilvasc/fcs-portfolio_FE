@@ -1,7 +1,7 @@
 import { uuid } from 'uuidv4';
 
 import CryptoTrackerImg from '../assets/cryptoTracker.png';
-import CryptoTrackerMockup from '../assets/cryptoTrackerMockup.png';
+// import CryptoTrackerMockup from '../assets/cryptoTrackerMockup.png';
 import GoBarberImg from '../assets/gobarber.png';
 import GoBarberMockup from '../assets/goBarberMockup.png';
 import HappyImg from '../assets/happy.png';
@@ -15,10 +15,11 @@ const Projects = [
     name: 'CryptoTracker',
     title:
       'CryptoTracker is an application created from scratch to practice some concepts using React, React Native and NodeJS.',
-    imgPath: [CryptoTrackerImg, CryptoTrackerMockup],
+    imgPath: [CryptoTrackerImg],
     techs: ['React Native'],
     tools: ['Redux', 'Figma'],
     type: ['Mobile'],
+    videoUrl: 'https://www.youtube.com/watch?v=me3bjZ-SedU',
     noLink: true,
     webLink: '',
     github: 'https://github.com/Fernandosilvasc/CryptoTracker',
@@ -57,6 +58,7 @@ const Projects = [
     techs: ['NodeJS', 'ReactJS', 'React Native'],
     tools: ['PostgreSQL', 'Docker', 'Figma'],
     type: ['BackEnd', 'FrontEnd', 'Mobile'],
+    videoUrl: '',
     noLink: false,
     webLink: 'https://gobarber.fernandocs.com',
     github: 'https://github.com/Fernandosilvasc/GoBarber-App',
@@ -97,6 +99,7 @@ const Projects = [
     techs: ['NodeJS', 'ReactJS', 'React Native'],
     tools: ['MongoDb', 'Expo', 'MapBox', 'Figma'],
     type: ['BackEnd', 'FrontEnd', 'Mobile'],
+    videoUrl: '',
     noLink: false,
     webLink: 'https://happy.fernandocs.com',
     github: 'https://github.com/Fernandosilvasc/nlw3-happy',
@@ -140,6 +143,7 @@ const Projects = [
     techs: ['HTML', 'CSS', 'JS'],
     tools: ['Sass', 'Figma'],
     type: ['FrontEnd'],
+    videoUrl: '',
     noLink: false,
     webLink: 'https://fernandosilvasc.github.io/lacrosseproject/',
     github: 'https://github.com/Fernandosilvasc/lacrosseproject',

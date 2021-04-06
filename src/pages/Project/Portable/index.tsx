@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import ReactPlayer from 'react-player';
 
 import {
   Container,
@@ -26,6 +27,7 @@ interface ProjectState {
   imgPath: Array<string>;
   techs: Array<string>;
   tools: Array<string>;
+  videoUrl: string;
   noLink: boolean;
   webLink: string;
   github: string;
@@ -87,7 +89,20 @@ const ProjectPortable: React.FC = () => {
             </Links>
 
             <Content>
-              <img src={currentProject.imgPath[1]} alt={currentProject.name} />
+              {currentProject.videoUrl && (
+                <ReactPlayer
+                  url={currentProject.videoUrl}
+                  controls
+                  width={300}
+                  height={200}
+                />
+              )}
+              {currentProject.imgPath[1] && (
+                <img
+                  src={currentProject.imgPath[1]}
+                  alt={currentProject.name}
+                />
+              )}
               <ProjectDescription>
                 <Technologies>
                   <h2>Technologies</h2>
