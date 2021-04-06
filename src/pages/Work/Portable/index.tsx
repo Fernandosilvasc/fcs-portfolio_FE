@@ -122,7 +122,7 @@ const WorkPortable: React.FC = () => {
                         </Link>
                         {project.noLink ? (
                           <a
-                            href={project.webLink}
+                            href={project.github}
                             target="_blank"
                             rel="noreferrer"
                           >
