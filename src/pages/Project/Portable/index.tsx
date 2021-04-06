@@ -26,6 +26,7 @@ interface ProjectState {
   imgPath: Array<string>;
   techs: Array<string>;
   tools: Array<string>;
+  noLink: boolean;
   webLink: string;
   github: string;
   about: string[];
@@ -71,9 +72,15 @@ const ProjectPortable: React.FC = () => {
         {currentProject && (
           <CardDescription key={currentProject.id}>
             <Links>
-              <a href={currentProject.webLink} target="_blank" rel="noreferrer">
-                Website
-              </a>
+              {!currentProject.noLink && (
+                <a
+                  href={currentProject.webLink}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Website
+                </a>
+              )}
               <a href={currentProject.github} target="_blank" rel="noreferrer">
                 GitHub
               </a>

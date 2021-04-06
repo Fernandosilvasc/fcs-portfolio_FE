@@ -1,5 +1,7 @@
 import { uuid } from 'uuidv4';
 
+import CryptoTrackerImg from '../assets/cryptoTracker.png';
+import CryptoTrackerMockup from '../assets/cryptoTrackerMockup.png';
 import GoBarberImg from '../assets/gobarber.png';
 import GoBarberMockup from '../assets/goBarberMockup.png';
 import HappyImg from '../assets/happy.png';
@@ -10,6 +12,44 @@ import ProCaliberMockup from '../assets/pro_caliberMockup.png';
 const Projects = [
   {
     id: uuid(),
+    name: 'CryptoTracker',
+    title:
+      'CryptoTracker is an application created from scratch to practice some concepts using React, React Native and NodeJS.',
+    imgPath: [CryptoTrackerImg, CryptoTrackerMockup],
+    techs: ['React Native'],
+    tools: ['Redux', 'Figma'],
+    type: ['Mobile'],
+    noLink: true,
+    webLink: '',
+    github: 'https://github.com/Fernandosilvasc/CryptoTracker',
+    about: [
+      'CryptoTracker is a simple application to track and display your cryptocurrencies. You will be able to follow the price in realtime of the market and create your own watch list. Track the prices of different cryptocurrencies including Bitcoin, Ethereum, Litecoin and others.',
+    ],
+    features: [
+      'list cryptocurrencies',
+      'search crypto by name or code',
+      'create a watch list',
+      'add crypto currency to watch list',
+      'delete a currency from watch list',
+    ],
+    learned: {
+      description: '',
+      bulletPoints: [
+        // 'handling database using ORM',
+        // 'applied units tests',
+        // 'used Mailtrap service to test email submissions in a development environment.',
+        // 'used Amazon SES for sending e-mails in a Production environment.',
+        // 'used linux server to hosted the web application',
+      ],
+    },
+    challenges: [
+      // 'As the first time that I made a full-stack application from scratch to host on a website, I can say it was a great opportunity to see how we can structure an application and make it scalable.',
+      // 'I want to emphasize that using the unit tests and applying some TDD and DDD concepts give me another perspective.',
+      // 'Using AWS service to host a web application, I faced some blocks, but by doing some research and asking for help in the dev community, I achieved my goals.',
+    ],
+  },
+  {
+    id: uuid(),
     name: 'GoBarber',
     title:
       "GoBarber is an application that I'm developing during the bootCamp to put into practice some concepts of React and NodeJS.",
@@ -17,6 +57,7 @@ const Projects = [
     techs: ['NodeJS', 'ReactJS', 'React Native'],
     tools: ['PostgreSQL', 'Docker', 'Figma'],
     type: ['BackEnd', 'FrontEnd', 'Mobile'],
+    noLink: false,
     webLink: 'https://gobarber.fernandocs.com',
     github: 'https://github.com/Fernandosilvasc/GoBarber-App',
     about: [
@@ -56,6 +97,7 @@ const Projects = [
     techs: ['NodeJS', 'ReactJS', 'React Native'],
     tools: ['MongoDb', 'Expo', 'MapBox', 'Figma'],
     type: ['BackEnd', 'FrontEnd', 'Mobile'],
+    noLink: false,
     webLink: 'https://happy.fernandocs.com',
     github: 'https://github.com/Fernandosilvasc/nlw3-happy',
     about: [
@@ -98,6 +140,7 @@ const Projects = [
     techs: ['HTML', 'CSS', 'JS'],
     tools: ['Sass', 'Figma'],
     type: ['FrontEnd'],
+    noLink: false,
     webLink: 'https://fernandosilvasc.github.io/lacrosseproject/',
     github: 'https://github.com/Fernandosilvasc/lacrosseproject',
     about: [

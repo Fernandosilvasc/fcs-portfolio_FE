@@ -32,6 +32,7 @@ interface ProjectsData {
   techs: Array<string>;
   tools: Array<string>;
   type: Array<string>;
+  noLink: boolean;
   webLink: string;
   github: string;
 }
@@ -119,13 +120,23 @@ const WorkPortable: React.FC = () => {
                         >
                           Details
                         </Link>
-                        <a
-                          href={project.webLink}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          Launch
-                        </a>
+                        {project.noLink ? (
+                          <a
+                            href={project.webLink}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            GitHub
+                          </a>
+                        ) : (
+                          <a
+                            href={project.webLink}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Launch
+                          </a>
+                        )}
                       </Links>
                     </Content>
                   </Project>

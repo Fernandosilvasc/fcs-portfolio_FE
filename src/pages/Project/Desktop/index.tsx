@@ -26,6 +26,7 @@ interface ProjectState {
   imgPath: Array<string>;
   techs: Array<string>;
   tools: Array<string>;
+  noLink: boolean;
   webLink: string;
   github: string;
   about: string[];
@@ -73,13 +74,15 @@ const ProjectDesktop: React.FC = () => {
                 <h2>{currentProject.name}</h2>
               </div>
               <div>
-                <a
-                  href={currentProject.webLink}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Website
-                </a>
+                {!currentProject.noLink && (
+                  <a
+                    href={currentProject.webLink}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Website
+                  </a>
+                )}
                 <a
                   href={currentProject.github}
                   target="_blank"
