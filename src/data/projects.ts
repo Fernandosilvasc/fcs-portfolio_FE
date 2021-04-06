@@ -56,7 +56,7 @@ const Projects = [
     techs: ['NodeJS', 'ReactJS', 'React Native'],
     tools: ['MongoDb', 'Expo', 'MapBox', 'Figma'],
     type: ['BackEnd', 'FrontEnd', 'Mobile'],
-    webLink: 'https://github.com/Fernandosilvasc/nlw3-happy',
+    webLink: 'https://happy.fernandocs.com',
     github: 'https://github.com/Fernandosilvasc/nlw3-happy',
     about: [
       `The Happy application was a project that #Rocketseat had
@@ -99,7 +99,7 @@ const Projects = [
     tools: ['Sass', 'Figma'],
     type: ['FrontEnd'],
     webLink: 'https://fernandosilvasc.github.io/lacrosseproject/',
-    github: '/',
+    github: 'https://github.com/Fernandosilvasc/lacrosseproject',
     about: [
       'The ProCaliber Website was the first project that we had a chance to have real experience with a customer to provide all the requirements. It was built to replace the current ProCaliber website, which was recreated from scratch using a new layout.',
     ],
