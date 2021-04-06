@@ -86,7 +86,7 @@ const Projects = [
       ],
     },
     challenges: [
-      'As the first time that I was trying to build a full-stack application, I faced a lot of issues during the development process, but I can say it was a great opportunity to leverage my knowledge and learn the whole process of the whole project structure.',
+      'As the first time that I was trying to build a full-stack application, I faced a lot of issues during the development process, but I can say it was a great opportunity to leverage my knowledge and learn the process of the whole project structure.',
     ],
   },
   {
