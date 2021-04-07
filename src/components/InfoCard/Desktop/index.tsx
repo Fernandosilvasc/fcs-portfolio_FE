@@ -76,7 +76,7 @@ const InfoCardDesktop: React.FC<InfoCardProps> = ({ title }: InfoCardProps) => {
         ) : (
           <Footer>
             <a
-              href="https://app.luminpdf.com/viewer/600730146cd37b0018f5a068"
+              href="https://app.luminpdf.com/viewer/606cfac720bcbe001145dc56"
               target="_blank"
               rel="noreferrer"
             >
