@@ -68,7 +68,7 @@ const InfoCardPortable: React.FC<InfoCardProps> = ({
         ) : (
           <AlternativeLink>
             <a
-              href="https://app.luminpdf.com/viewer/600730146cd37b0018f5a068"
+              href="https://app.luminpdf.com/viewer/60c2c43d62485f0018bfad8a"
               target="_blank"
               rel="noreferrer"
             >
