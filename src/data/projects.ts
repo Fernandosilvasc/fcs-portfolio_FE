@@ -34,7 +34,7 @@ const Projects = [
       'delete a currency from watch list',
     ],
     learned: {
-      description: '',
+      description: `In this project I could use some resources present in React Native for the first time, which I can mention as an example the Flatlist, used to render interfaces in a performative way, applying it in the rendering of the present lists. Another tool that is important to mention here was the implementation of Redux, in order to manage the state of some components.I believe that all the development of the project helped me to practice and further develop what I've learned about mobile development.`,
       bulletPoints: [
         // 'handling database using ORM',
         // 'applied units tests',
@@ -44,9 +44,7 @@ const Projects = [
       ],
     },
     challenges: [
-      // 'As the first time that I made a full-stack application from scratch to host on a website, I can say it was a great opportunity to see how we can structure an application and make it scalable.',
-      // 'I want to emphasize that using the unit tests and applying some TDD and DDD concepts give me another perspective.',
-      // 'Using AWS service to host a web application, I faced some blocks, but by doing some research and asking for help in the dev community, I achieved my goals.',
+      'I believe that the challenge in this project was to structure the entire application and separate the responsibilities in each component so that, in a way, it had its reusable functionality without the risk of side effects.',
     ],
   },
   {
