@@ -18,6 +18,7 @@ interface InfoCardProps {
   title: string;
 }
 
+const resumeLink = process.env.REACT_APP_RESUME_LINK;
 const InfoCardPortable: React.FC<InfoCardProps> = ({
   title,
 }: InfoCardProps) => {
@@ -67,11 +68,7 @@ const InfoCardPortable: React.FC<InfoCardProps> = ({
           </AlternativeLink>
         ) : (
           <AlternativeLink>
-            <a
-              href="https://app.luminpdf.com/viewer/60c2c43d62485f0018bfad8a"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={resumeLink} target="_blank" rel="noreferrer">
               <p>Resume</p>
               <Clip />
             </a>
