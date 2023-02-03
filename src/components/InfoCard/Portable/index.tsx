@@ -13,12 +13,13 @@ import ImgAvatar from '../../../assets/imgAvatar.2.png';
 import { ReactComponent as GitHub } from '../../../assets/github2.svg';
 import { ReactComponent as LikedIn } from '../../../assets/linkedIn2.svg';
 import { ReactComponent as Clip } from '../../../assets/clip.svg';
+import GetLinks from '../../../util/links';
 
 interface InfoCardProps {
   title: string;
 }
 
-const resumeLink = process.env.REACT_APP_RESUME_LINK;
+const link = GetLinks();
 const InfoCardPortable: React.FC<InfoCardProps> = ({
   title,
 }: InfoCardProps) => {
@@ -39,18 +40,10 @@ const InfoCardPortable: React.FC<InfoCardProps> = ({
           </Description>
 
           <SocialMediaLinks title={title}>
-            <a
-              href="https://github.com/Fernandosilvasc"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={link.gitHub} target="_blank" rel="noreferrer">
               <GitHub />
             </a>
-            <a
-              href="https://www.linkedin.com/in/fernando-correa-da-silva/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={link.linkedin} target="_blank" rel="noreferrer">
               <LikedIn />
             </a>
           </SocialMediaLinks>
@@ -58,17 +51,13 @@ const InfoCardPortable: React.FC<InfoCardProps> = ({
 
         {title !== 'contact' ? (
           <AlternativeLink>
-            <a
-              href="mailto:fernando_silvasc@hotmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={link.email} target="_blank" rel="noreferrer">
               <p>Contact Me</p>
             </a>
           </AlternativeLink>
         ) : (
           <AlternativeLink>
-            <a href={resumeLink} target="_blank" rel="noreferrer">
+            <a href={link.resume} target="_blank" rel="noreferrer">
               <p>Resume</p>
               <Clip />
             </a>

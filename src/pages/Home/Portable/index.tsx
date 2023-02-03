@@ -12,7 +12,9 @@ import { ReactComponent as GitHubIcon } from '../../../assets/github.svg';
 import { ReactComponent as LinkedInIcon } from '../../../assets/linkedIn.svg';
 
 import IconsSkill from '../IconsSkill/index';
+import GetLinks from '../../../util/links';
 
+const link = GetLinks();
 const HomePortable: React.FC = () => {
   return (
     <>
@@ -35,11 +37,7 @@ const HomePortable: React.FC = () => {
             <li>
               <div>
                 <GitHubIcon />
-                <a
-                  href="https://github.com/Fernandosilvasc"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href={link.gitHub} target="_blank" rel="noreferrer">
                   &#8212; GitHub
                 </a>
               </div>
@@ -47,11 +45,7 @@ const HomePortable: React.FC = () => {
             <li>
               <div>
                 <LinkedInIcon />
-                <a
-                  href="https://www.linkedin.com/in/fernando-correa-da-silva/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href={link.linkedin} target="_blank" rel="noreferrer">
                   &#8212; LinkedIn
                 </a>
               </div>
