@@ -2,8 +2,8 @@ import { v4 as uuid } from 'uuid';
 
 import NodeJsIcon from '../../../assets/nodejs_icon.svg';
 import ReactIcon from '../../../assets/react_icon.svg';
-import JSIcon from '../../../assets/js_icon.svg';
-import PHPIcon from '../../../assets/php_icon.svg';
+// import JSIcon from '../../../assets/js_icon.svg';
+// import PHPIcon from '../../../assets/php_icon.svg';
 import HTMLIcon from '../../../assets/html_icon.svg';
 import CSSIcon from '../../../assets/css_icon.svg';
 import SassIcon from '../../../assets/sass_icon.svg';
