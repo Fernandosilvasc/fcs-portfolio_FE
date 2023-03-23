@@ -19,20 +19,19 @@ const AboutPortable: React.FC = () => {
           <Content>
             <div>
               <p>
-                Full-stack web developer with a background in quality assurance
-                and production engineering. My background has provided me with
-                high-quality coding skills and a natural understanding of
-                software development cycles.
+                Full-stack web Developer and technology enthusiast who loves the
+                challenge of understanding and working with complex systems. I
+                have worked in a wide range of areas, from coding to working
+                efficiently with remote teams in an Agile/Scrum environment.
               </p>
               <p>
-                My thorough enjoyment of working on backend technologies has
-                given me the ability to quickly read and understand existing
-                code and systems.
+                Also, I have experience in building web applications using
+                languages and tools such as JavaScript/Typescript, Node.js,
+                Firebase, HTML, CSS, MySQL, GraphQL, React, and React Native.
               </p>
               <p>
-                I’d love to leverage my knowledge gained thus far and continue
-                to rapidly grow in tech and work collaboratively in a team to
-                deliver excellent results.
+                Feel free to contact me anytime, and I&apos;ll be happy to chat
+                with you about new opportunities.
               </p>
             </div>
             <Illustration />
