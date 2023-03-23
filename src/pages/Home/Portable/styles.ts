@@ -266,12 +266,12 @@ export const BoxSkills = styled.div`
   }
 
   ul {
-    width: 22.5rem;
+    width: 28.125rem;
     li {
       margin: 1.25rem;
       img {
-        width: 3.125rem;
-        height: 3.125rem;
+        width: 2.1875rem;
+        height: 2.1875rem;
       }
     }
   }
@@ -286,13 +286,13 @@ export const BoxSkills = styled.div`
     }
 
     ul {
-      width: 17.5rem;
+      width: 25rem;
       li {
         margin: 0.9375rem;
-        img {
-          width: 2.5rem;
-          height: 2.5rem;
-        }
+        // img {
+        //   width: 35px;
+        //   height: 35px;
+        // }
       }
     }
   }
@@ -307,7 +307,7 @@ export const BoxSkills = styled.div`
     }
 
     ul {
-      width: 12.5rem;
+      width: 18.75rem;
       li {
         margin: 0.625rem;
         img {
@@ -327,12 +327,12 @@ export const BoxSkills = styled.div`
     }
 
     ul {
-      width: 12.5rem;
+      width: 17.5rem;
       li {
         margin: 0.625rem;
         img {
-          width: 1.875rem;
-          height: 1.875rem;
+          width: 1.5625rem;
+          height: 1.5625rem;
         }
       }
     }
@@ -348,7 +348,7 @@ export const BoxSkills = styled.div`
     }
 
     ul {
-      width: 10.25rem;
+      width: 15.625rem;
       li {
         margin: 0.5rem;
         img {
